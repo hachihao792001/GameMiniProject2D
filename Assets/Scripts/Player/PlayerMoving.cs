@@ -11,9 +11,5 @@ public class PlayerMoving : MonoBehaviour
     private void Update()
     {
         _rb.velocity = _joyStick.Input * _speed;
-        if (_rb.velocity.x != 0)
-        {
-            transform.right = _rb.velocity.normalized;
-        }
     }
 }
