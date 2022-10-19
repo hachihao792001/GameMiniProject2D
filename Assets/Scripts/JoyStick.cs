@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] RectTransform _joyStickHandle;
     [SerializeField] float _joyStickHandleMaxDistance;
@@ -35,5 +35,16 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             _joyStickHandle.position = _joyStickHandleOriginPos + (_joyStickHandle.position - _joyStickHandleOriginPos).normalized * _joyStickHandleMaxDistance;
         }
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        _joyStickHandle.position = eventData.position;
+        ClampJoyStickHandle();
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        _joyStickHandle.position = _joyStickHandleOriginPos;
     }
 }
