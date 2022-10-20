@@ -2,27 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemy : MonoBehaviour
+public class MeleeEnemy : Enemy
 {
-    [SerializeField] float _speed;
-
-    Player player;
-
-    private void Start()
-    {
-        player = GameController.Instance.Player;
-    }
+    [SerializeField] Rigidbody2D _rb;
 
     void Update()
     {
-        transform.Translate((player.transform.position - transform.position).normalized * _speed * Time.deltaTime);
+        _rb.velocity = (player.transform.position - transform.position).normalized * _speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
+            collision.gameObject.GetComponent<Player>().PlayerHealth.TakeHealth(_damage);
         }
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DetectEnemy : MonoBehaviour
 {
-    public const string ENEMY_TAG = "Enemy";
     public List<Transform> _enemiesInZone;
 
     public Transform nearestEnemy;
@@ -37,7 +36,7 @@ public class DetectEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && !_enemiesInZone.Contains(collision.transform))
+        if (collision.gameObject.CompareTag(GameInformation.ENEMY_TAG) && !_enemiesInZone.Contains(collision.transform))
         {
             _enemiesInZone.Add(collision.transform);
             UpdateNearestEnemy();
@@ -46,7 +45,7 @@ public class DetectEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag(GameInformation.ENEMY_TAG))
         {
             _enemiesInZone.Remove(collision.transform);
             UpdateNearestEnemy();

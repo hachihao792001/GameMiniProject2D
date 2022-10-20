@@ -13,6 +13,7 @@ public class BulletInfo : ScriptableObject
     public BulletType type;
     public string description;
     public float shootInterval;
+    public float damage;
     public Sprite image;
     public Bullet prefab;
 }

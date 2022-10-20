@@ -15,5 +15,6 @@ MonoBehaviour:
   type: 0
   description: 
   shootInterval: 1
+  damage: 5
   image: {fileID: 0}
   prefab: {fileID: -8176635269209820893, guid: 15cb0df526c085a488671300706de048, type: 3}

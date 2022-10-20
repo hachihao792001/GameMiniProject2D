@@ -24,7 +24,7 @@ public class PlayerAttacking : MonoBehaviour
                 if (_detectEnemy.nearestEnemy != null)
                 {
                     Bullet newBullet = Instantiate(GameInformation.Instance.bulletInfos[i].prefab, transform.position, Quaternion.identity, _bulletParent);
-                    newBullet.Init(_detectEnemy.nearestEnemy);
+                    newBullet.Init(GameInformation.Instance.bulletInfos[i], _detectEnemy.nearestEnemy);
                     _bulletTimers[i] = 0;
                 }
             }
