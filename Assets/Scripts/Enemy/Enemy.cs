@@ -10,11 +10,11 @@ public class Enemy : MonoBehaviour
     public float CurrentHealth;
 
     [SerializeField] protected float _speed;
-    [SerializeField] protected float _damage;
+    [SerializeField] protected float _meleeDamage;
 
     [SerializeField] FlashingRed _flashingRed;
 
-    private void Start()
+    public virtual void Start()
     {
         CurrentHealth = TotalHealth;
         player = GameController.Instance.Player;

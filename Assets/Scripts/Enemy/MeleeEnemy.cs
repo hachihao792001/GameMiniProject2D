@@ -20,7 +20,7 @@ public class MeleeEnemy : Enemy
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Player>().PlayerHealth.TakeHealth(_damage);
+            collision.gameObject.GetComponent<Player>().PlayerHealth.TakeHealth(_meleeDamage);
         }
     }
 }
