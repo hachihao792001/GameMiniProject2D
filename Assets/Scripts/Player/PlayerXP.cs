@@ -19,7 +19,7 @@ public class PlayerXP : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(GameInformation.XP_TAG))
+        if (collision.gameObject.CompareTag(GameController.XP_TAG))
         {
             Destroy(collision.gameObject);
             XP++;

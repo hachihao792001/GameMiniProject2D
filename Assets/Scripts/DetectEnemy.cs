@@ -36,7 +36,7 @@ public class DetectEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(GameInformation.ENEMY_TAG) && !_enemiesInZone.Contains(collision.transform))
+        if (collision.gameObject.CompareTag(GameController.ENEMY_TAG) && !_enemiesInZone.Contains(collision.transform))
         {
             _enemiesInZone.Add(collision.transform);
             UpdateNearestEnemy();
@@ -45,7 +45,7 @@ public class DetectEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(GameInformation.ENEMY_TAG))
+        if (collision.gameObject.CompareTag(GameController.ENEMY_TAG))
         {
             _enemiesInZone.Remove(collision.transform);
             UpdateNearestEnemy();

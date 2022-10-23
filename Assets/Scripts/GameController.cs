@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameController : MonoSingleton<GameController>
 {
+    public const string PLAYER_TAG = "Player";
+    public const string ENEMY_TAG = "Enemy";
+    public const string XP_TAG = "XP";
+
     public Player Player;
     public GameObject XPPrefab;
 }
