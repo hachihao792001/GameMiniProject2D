@@ -4,7 +4,8 @@ using UnityEngine;
 
 public enum BulletType
 {
-    Normal
+    Normal,
+    Boomerang
 }
 
 [CreateAssetMenu(fileName = "BulletInfo", menuName = "ScriptableObjects/BulletInfo")]

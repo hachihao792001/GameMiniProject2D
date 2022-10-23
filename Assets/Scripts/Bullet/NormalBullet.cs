@@ -11,7 +11,6 @@ public class NormalBullet : Bullet
         transform.up = (target.position - transform.position).normalized;
         rb.velocity = transform.up * _speed;
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
