@@ -18,19 +18,24 @@ public class MapGenerator : MonoBehaviour
     private void Update()
     {
         List<Vector2> current4PieceCoords = GetPieceCoords(GameController.Instance.Player.transform.position);
-        foreach (MapPieceInfo pieceInfo in currentPieces)
-        {
-            Destroy(pieceInfo.piece.gameObject);
 
+        List<MapPieceInfo> shouldBeRemovedPieces = currentPieces.FindAll(x => !current4PieceCoords.Contains(x.coord));
+        foreach (MapPieceInfo pieceInfo in shouldBeRemovedPieces)
+        {
+            currentPieces.Remove(pieceInfo);
+            Destroy(pieceInfo.piece.gameObject);
         }
-        currentPieces.Clear();
+
         foreach (Vector2 coord in current4PieceCoords)
         {
-            MapPieceInfo newPieceInfo;
-            newPieceInfo.coord = coord;
-            newPieceInfo.piece = Instantiate(_mapPiecePrefab, coord * _mapPieceSize, Quaternion.identity);
+            if (!currentPieces.Exists(x => x.coord == coord))
+            {
+                MapPieceInfo newPieceInfo;
+                newPieceInfo.coord = coord;
+                newPieceInfo.piece = Instantiate(_mapPiecePrefab, coord * _mapPieceSize, Quaternion.identity);
 
-            currentPieces.Add(newPieceInfo);
+                currentPieces.Add(newPieceInfo);
+            }
         }
     }
 
