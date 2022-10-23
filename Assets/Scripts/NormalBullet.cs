@@ -17,6 +17,7 @@ public class NormalBullet : Bullet
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
             enemy.TakeHealth(myInfo.damage);
+
             Destroy(gameObject);
         }
     }

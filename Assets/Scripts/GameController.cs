@@ -8,8 +8,11 @@ public class GameController : MonoSingleton<GameController>
     public const string ENEMY_TAG = "Enemy";
     public const string XP_TAG = "XP";
 
+    public Camera MainCamera;
+    public Transform Canvas;
     public Player Player;
     public GameObject XPPrefab;
+    public DamageTextController DamageTextController;
 }
 
 public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour

@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] Slider _healthBar;
 
+    [SerializeField] FlashingRed _flashingRed;
+
     private void Start()
     {
         currentHealth = FullHealth;
@@ -44,6 +46,9 @@ public class PlayerHealth : MonoBehaviour
             _healthBar.value = currentHealth / FullHealth;
 
             canTakeDamage = false;
+
+            _flashingRed.DoFlash();
+            GameController.Instance.DamageTextController.SpawnNewText(transform.position, h);
 
             if (currentHealth == 0)
             {

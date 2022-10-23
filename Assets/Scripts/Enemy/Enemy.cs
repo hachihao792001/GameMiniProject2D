@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float _speed;
     [SerializeField] protected float _damage;
 
+    [SerializeField] FlashingRed _flashingRed;
+
     private void Start()
     {
         CurrentHealth = TotalHealth;
@@ -20,6 +22,10 @@ public class Enemy : MonoBehaviour
     public void TakeHealth(float h)
     {
         CurrentHealth -= h;
+
+        _flashingRed.DoFlash();
+        GameController.Instance.DamageTextController.SpawnNewText(transform.position, h);
+
         if (CurrentHealth <= 0)
         {
             Die();
