@@ -1,11 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerXP : MonoBehaviour
 {
     public int XP;
     public int currentLevel = 1;
+
+    [SerializeField] Slider _xpBar;
+    [SerializeField] Text _levelText;
+
+    private void Start()
+    {
+        _xpBar.value = 0;
+        _levelText.text = "1";
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,10 +23,14 @@ public class PlayerXP : MonoBehaviour
         {
             Destroy(collision.gameObject);
             XP++;
+            _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
+
             if (XP >= GameInformation.Instance.levelXPs[currentLevel - 1])
             {
                 XP = 0;
+                _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
                 currentLevel++;
+                _levelText.text = currentLevel.ToString();
             }
         }
     }

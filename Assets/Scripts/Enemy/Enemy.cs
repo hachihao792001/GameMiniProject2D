@@ -21,6 +21,14 @@ public class Enemy : MonoBehaviour
     {
         CurrentHealth -= h;
         if (CurrentHealth <= 0)
-            Destroy(gameObject);
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameController : MonoSingleton<GameController>
 {
     public Player Player;
+    public GameObject XPPrefab;
 }
 
 public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour

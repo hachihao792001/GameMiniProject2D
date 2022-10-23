@@ -14,9 +14,9 @@ public class NormalBullet : Bullet
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(GameInformation.ENEMY_TAG))
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            collision.gameObject.GetComponent<Enemy>().TakeHealth(myInfo.damage);
+            enemy.TakeHealth(myInfo.damage);
             Destroy(gameObject);
         }
     }

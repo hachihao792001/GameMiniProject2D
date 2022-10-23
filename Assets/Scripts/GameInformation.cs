@@ -6,6 +6,8 @@ public class GameInformation : MonoSingleton<GameInformation>
 {
     public const string PLAYER_TAG = "Player";
     public const string ENEMY_TAG = "Enemy";
+    public const string XP_TAG = "XP";
 
     public BulletInfo[] bulletInfos;
+    public int[] levelXPs;
 }

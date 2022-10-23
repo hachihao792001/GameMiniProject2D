@@ -8,4 +8,5 @@ public class Player : MonoBehaviour
     public PlayerLooking PlayerLooking;
     public PlayerMoving PlayerMoving;
     public PlayerHealth PlayerHealth;
+    public PlayerXP PlayerXP;
 }
