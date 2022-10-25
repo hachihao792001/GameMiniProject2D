@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7321749681904913159}
   - component: {fileID: 2799088704429362257}
   - component: {fileID: 4427549917930392177}
+  - component: {fileID: 9134109970299896146}
   m_Layer: 8
   m_Name: RangedEnemyBullet
   m_TagString: Untagged
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 7
   rb: {fileID: 7321749681904913159}
+--- !u!114 &9134109970299896146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427549917930392179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2e048cb59bebe45b8eebf12c62cfde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 5
