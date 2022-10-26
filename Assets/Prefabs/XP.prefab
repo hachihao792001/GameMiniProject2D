@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df93f616795b83646ad622ab669b7d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lerpRateIncrease: 3
+  _lerpRateIncrease: 5
   _startLerpRate: 3

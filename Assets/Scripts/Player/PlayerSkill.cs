@@ -39,8 +39,10 @@ public class PlayerSkill : MonoBehaviour
                     player.PlayerAttacking.AddBulletBonusDamage(bulletType, upgradeActionValue);
                     break;
                 case SkillUpgradeActionType.IncreaseBulletAffectArea:
+                    player.PlayerAttacking.AddBulletAffectArea(bulletType, upgradeActionValue);
                     break;
                 case SkillUpgradeActionType.ShootAnotherBulletOpposite:
+                    player.PlayerAttacking.SetBulletShootOpposite(bulletType);
                     break;
             }
         }

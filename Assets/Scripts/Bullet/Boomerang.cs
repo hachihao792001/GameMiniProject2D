@@ -12,10 +12,10 @@ public class Boomerang : Bullet
     float tick = 0;
 
     Vector3 startDir;
-    public override void Init(BulletInfo info, Transform target, float bonusDamage)
+    public override void Init(BulletInfo info, Vector3 targetPos, BulletBonusStat bonusStat)
     {
-        base.Init(info, target, bonusDamage);
-        startDir = (target.position - transform.position).normalized;
+        base.Init(info, targetPos, bonusStat);
+        startDir = (targetPos - transform.position).normalized;
 
         rb.AddForce(startDir * initialForce, ForceMode2D.Impulse);
     }
@@ -49,7 +49,7 @@ public class Boomerang : Bullet
     {
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeHealth(myInfo.damage + bonusDamage);
+            enemy.TakeHealth(getFinalDamage());
         }
     }
 }

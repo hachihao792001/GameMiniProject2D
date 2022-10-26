@@ -6,10 +6,10 @@ public class NormalBullet : Bullet
 {
     [SerializeField] float _speed;
 
-    public override void Init(BulletInfo info, Transform target, float bonusDamage)
+    public override void Init(BulletInfo info, Vector3 targetPos, BulletBonusStat bonusStat)
     {
-        base.Init(info, target, bonusDamage);
-        transform.up = (target.position - transform.position).normalized;
+        base.Init(info, targetPos, bonusStat);
+        transform.up = (targetPos - transform.position).normalized;
         rb.velocity = transform.up * _speed;
     }
 
@@ -17,7 +17,7 @@ public class NormalBullet : Bullet
     {
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeHealth(myInfo.damage + bonusDamage);
+            enemy.TakeHealth(getFinalDamage());
 
             Destroy(gameObject);
         }

@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct BulletBonusStat
+{
+    public float damage;
+    public float affectArea;
+    public bool shootOpposite;
+}
+
 public class PlayerAttacking : MonoBehaviour
 {
     [SerializeField] Transform _bulletParent;
@@ -9,17 +16,17 @@ public class PlayerAttacking : MonoBehaviour
 
     float[] _bulletTimers;
     bool[] _bulletUnlocked;
-    float[] _bulletBonusDamage;
+    BulletBonusStat[] _bulletBonusStats;
 
     List<BulletInfo> _bulletInfos;
 
-    int overallBonusDamage;
+    public int overallBonusDamage;
     private void Start()
     {
         _bulletInfos = GameInformation.Instance.bulletInfos;
         _bulletTimers = new float[_bulletInfos.Count];
         _bulletUnlocked = new bool[_bulletInfos.Count];
-        _bulletBonusDamage = new float[_bulletInfos.Count];
+        _bulletBonusStats = new BulletBonusStat[_bulletInfos.Count];
 
         UnlockBullet(BulletType.Normal);
 
@@ -38,7 +45,14 @@ public class PlayerAttacking : MonoBehaviour
                 if (DetectEnemy.nearestEnemy != null)
                 {
                     Bullet newBullet = Instantiate(_bulletInfos[i].prefab, transform.position, Quaternion.identity, _bulletParent);
-                    newBullet.Init(_bulletInfos[i], DetectEnemy.nearestEnemy, _bulletBonusDamage[i] + overallBonusDamage);
+                    newBullet.Init(_bulletInfos[i], DetectEnemy.nearestEnemy.position, _bulletBonusStats[i]);
+
+                    if (_bulletBonusStats[i].shootOpposite)
+                    {
+                        newBullet = Instantiate(_bulletInfos[i].prefab, transform.position, Quaternion.identity, _bulletParent);
+                        newBullet.Init(_bulletInfos[i], transform.position + (transform.position - DetectEnemy.nearestEnemy.position), _bulletBonusStats[i]);
+                    }
+
                     _bulletTimers[i] = 0;
                 }
             }
@@ -67,6 +81,20 @@ public class PlayerAttacking : MonoBehaviour
     {
         if (!_bulletInfos.Exists(x => x.type == bulletType)) return;  //for unimplemented bullets
 
-        _bulletBonusDamage[_bulletInfos.FindIndex(x => x.type == bulletType)] += value;
+        _bulletBonusStats[_bulletInfos.FindIndex(x => x.type == bulletType)].damage += value;
+    }
+
+    public void AddBulletAffectArea(BulletType bulletType, float value)
+    {
+        if (!_bulletInfos.Exists(x => x.type == bulletType)) return;  //for unimplemented bullets
+
+        _bulletBonusStats[_bulletInfos.FindIndex(x => x.type == bulletType)].affectArea += value;
+    }
+
+    public void SetBulletShootOpposite(BulletType bulletType)
+    {
+        if (!_bulletInfos.Exists(x => x.type == bulletType)) return;  //for unimplemented bullets
+
+        _bulletBonusStats[_bulletInfos.FindIndex(x => x.type == bulletType)].shootOpposite = true;
     }
 }

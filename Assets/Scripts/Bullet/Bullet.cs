@@ -7,11 +7,16 @@ public class Bullet : MonoBehaviour
     public BulletInfo myInfo;
 
     public Rigidbody2D rb;
-    protected float bonusDamage;
+    protected BulletBonusStat bonusStat;
 
-    public virtual void Init(BulletInfo info, Transform target, float bonusDamage)
+    public virtual void Init(BulletInfo info, Vector3 targetPos, BulletBonusStat bonusStat)
     {
         myInfo = info;
-        this.bonusDamage = bonusDamage;
+        this.bonusStat = bonusStat;
+    }
+
+    protected float getFinalDamage()
+    {
+        return myInfo.damage + GameController.Instance.Player.PlayerAttacking.overallBonusDamage + bonusStat.damage;
     }
 }

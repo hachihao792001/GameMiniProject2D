@@ -14,10 +14,10 @@ public class Bomb : Bullet
     float tick = 0;
     bool exploded = false;
 
-    public override void Init(BulletInfo info, Transform target, float bonusDamage)
+    public override void Init(BulletInfo info, Vector3 targetPos, BulletBonusStat bonusStat)
     {
-        base.Init(info, target, bonusDamage);
-        transform.up = (target.position - transform.position).normalized;
+        base.Init(info, targetPos, bonusStat);
+        transform.up = (targetPos - transform.position).normalized;
         rb.velocity = transform.up * _speed;
     }
 
@@ -29,13 +29,13 @@ public class Bomb : Bullet
             _explodeEffect.SetActive(true);
             Destroy(gameObject, _timeToDisappearAfterExplode);
 
-            Collider2D[] hittedEnemies = Physics2D.OverlapCircleAll(transform.position, _explosionRadius, GameController.Instance.EnemyLayerMask);
+            Collider2D[] hittedEnemies = Physics2D.OverlapCircleAll(transform.position, _explosionRadius + bonusStat.affectArea, GameController.Instance.EnemyLayerMask);
             rb.velocity = Vector2.zero;
             _sr.enabled = false;
 
             for (int i = 0; i < hittedEnemies.Length; i++)
             {
-                hittedEnemies[i].GetComponent<Enemy>().TakeHealth(myInfo.damage + bonusDamage);
+                hittedEnemies[i].GetComponent<Enemy>().TakeHealth(getFinalDamage());
             }
 
             exploded = true;
