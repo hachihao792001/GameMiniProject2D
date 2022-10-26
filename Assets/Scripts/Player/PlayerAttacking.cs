@@ -21,7 +21,7 @@ public class PlayerAttacking : MonoBehaviour
         _bulletUnlocked = new bool[_bulletInfos.Count];
         _bulletBonusDamage = new float[_bulletInfos.Count];
 
-        _bulletUnlocked[_bulletInfos.FindIndex(x => x.type == BulletType.Normal)] = true;
+        UnlockBullet(BulletType.Normal);
 
         overallBonusDamage = 0;
     }

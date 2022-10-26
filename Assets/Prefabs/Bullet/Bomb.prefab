@@ -4874,7 +4874,6 @@ GameObject:
   - component: {fileID: 5121623968690120960}
   - component: {fileID: 2305399248917506165}
   - component: {fileID: -4038121221666464591}
-  - component: {fileID: 5121623968690120966}
   m_Layer: 6
   m_Name: Bomb
   m_TagString: Untagged
@@ -4891,7 +4890,7 @@ Transform:
   m_GameObject: {fileID: 5121623968690120961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.352, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 5559143990933579113}
   m_Father: {fileID: 0}
@@ -4989,19 +4988,3 @@ MonoBehaviour:
   _timeUntilExplode: 1
   _timeToDisappearAfterExplode: 1
   _explodeEffect: {fileID: 3827767865143547283}
---- !u!58 &5121623968690120966
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5121623968690120961}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.58

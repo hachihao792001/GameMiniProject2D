@@ -324,7 +324,7 @@ MonoBehaviour:
   nearY: 3
   farY: 6
   minDelay: 1
-  maxDelay: 3
+  maxDelay: 2.7
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,6 +1346,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d711797e996581c488c259bcb27d4a83, type: 2}
   - {fileID: 11400000, guid: 048af17f5e83691478742001af696f27, type: 2}
   - {fileID: 11400000, guid: 7049817efcd9c824c8db95b617c9315d, type: 2}
+  - {fileID: 11400000, guid: ec9718d9f1dec4c4e83f19b85bd6934d, type: 2}
   skillInfos:
   - {fileID: 11400000, guid: 4ac23f317f594634799919f2690c6f84, type: 2}
   - {fileID: 11400000, guid: bb335a0410a71d14aa7bd3dd22d66a4b, type: 2}

@@ -500,7 +500,7 @@ MonoBehaviour:
   TotalHealth: 10
   CurrentHealth: 0
   _speed: 1.2
-  _meleeDamage: 5
+  _meleeDamage: 3
   _flashingRed: {fileID: 1250220424}
   _rb: {fileID: 882721158225146858}
   _sr: {fileID: 882721158225146854}
@@ -508,7 +508,7 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 4427549917930392177, guid: 76ff4767816c27148bb98f85e0709a17, type: 3}
   _startShootingRange: 3
   _stopShootingRange: 4
-  _bulletDamage: 12
+  _bulletDamage: 6
 --- !u!114 &1250220424
 MonoBehaviour:
   m_ObjectHideFlags: 0

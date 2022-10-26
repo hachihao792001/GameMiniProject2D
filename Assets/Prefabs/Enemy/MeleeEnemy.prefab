@@ -275,7 +275,7 @@ MonoBehaviour:
   TotalHealth: 10
   CurrentHealth: 0
   _speed: 1
-  _meleeDamage: 10
+  _meleeDamage: 5
   _flashingRed: {fileID: 5802404196911135630}
   _rb: {fileID: 242140637}
   _sr: {fileID: 7000054918645494507}
