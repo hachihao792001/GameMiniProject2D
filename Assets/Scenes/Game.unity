@@ -1345,6 +1345,7 @@ MonoBehaviour:
   bulletInfos:
   - {fileID: 11400000, guid: d711797e996581c488c259bcb27d4a83, type: 2}
   - {fileID: 11400000, guid: 048af17f5e83691478742001af696f27, type: 2}
+  - {fileID: 11400000, guid: 7049817efcd9c824c8db95b617c9315d, type: 2}
   skillInfos:
   - {fileID: 11400000, guid: 4ac23f317f594634799919f2690c6f84, type: 2}
   - {fileID: 11400000, guid: bb335a0410a71d14aa7bd3dd22d66a4b, type: 2}
@@ -1740,6 +1741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4509cbdfe617af14bbaa01d67b06b2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
   MainCamera: {fileID: 519420031}
   Canvas: {fileID: 1917248649}
   Player: {fileID: 985233736}

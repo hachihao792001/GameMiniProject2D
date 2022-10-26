@@ -49,7 +49,7 @@ public class PlayerSkill : MonoBehaviour
             switch (skillType)
             {
                 case SkillType.IncreaseAttackRange:
-                    player.PlayerAttacking.DetectEnemy.IncreaseRange(upgradeActionValue / 2f);
+                    player.PlayerAttacking.DetectEnemy.IncreaseRange(upgradeActionValue);
                     break;
                 case SkillType.IncreaseDamage:
                     player.PlayerAttacking.AddOverallBonusDamage((int)upgradeActionValue);

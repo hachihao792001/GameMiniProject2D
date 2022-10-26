@@ -14,8 +14,6 @@ public class PlayerAttacking : MonoBehaviour
     List<BulletInfo> _bulletInfos;
 
     int overallBonusDamage;
-
-
     private void Start()
     {
         _bulletInfos = GameInformation.Instance.bulletInfos;

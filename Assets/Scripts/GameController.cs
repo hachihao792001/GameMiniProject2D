@@ -8,6 +8,8 @@ public class GameController : MonoSingleton<GameController>
     public const string ENEMY_TAG = "Enemy";
     public const string XP_TAG = "XP";
 
+    public LayerMask EnemyLayerMask;
+
     public Camera MainCamera;
     public Transform Canvas;
     public Player Player;
