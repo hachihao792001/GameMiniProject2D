@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     public float FullHealth = 100;
     public float currentHealth;
 
+    float _defense = 0;
+
     [SerializeField] Slider _healthBar;
 
     [SerializeField] FlashingRed _flashingRed;
@@ -20,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = FullHealth;
         _healthBar.value = currentHealth / FullHealth;
+
+        _defense = 0;
     }
 
     private void Update()
@@ -39,6 +43,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if (canTakeDamage)
         {
+            h -= _defense;
+            if (h < 0)
+                h = 0;
+
             currentHealth -= h;
             if (currentHealth < 0)
                 currentHealth = 0;
@@ -64,5 +72,17 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = FullHealth;
 
         _healthBar.value = currentHealth / FullHealth;
+    }
+
+    public void IncreaseMaxHealth(float value)
+    {
+        float oldRatio = currentHealth / FullHealth;
+        FullHealth += value;
+        currentHealth = FullHealth * oldRatio;
+    }
+
+    public void IncreaseDefense(float value)
+    {
+        _defense += value;
     }
 }

@@ -11,6 +11,8 @@ public class PlayerXP : MonoBehaviour
     [SerializeField] Slider _xpBar;
     [SerializeField] Text _levelText;
 
+    public DetectXP DetectXP;
+
     private void Start()
     {
         _xpBar.value = 0;
