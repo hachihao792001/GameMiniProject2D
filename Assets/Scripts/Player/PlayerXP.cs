@@ -27,6 +27,8 @@ public class PlayerXP : MonoBehaviour
             XP++;
             _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
 
+            AudioController.Instance.PlayAudio(Audio.PickUpXP);
+
             if (XP >= GameInformation.Instance.levelXPs[currentLevel - 1])
             {
                 GameController.Instance.PopupChooseSkillController.Show();

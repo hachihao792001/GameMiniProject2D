@@ -9,7 +9,7 @@ public class PopupChooseSkillItemController : MonoBehaviour
     [SerializeField] Image _imgIcon;
     [SerializeField] Text _txtDescription;
     [SerializeField] Text _txtName;
-    [SerializeField] Text _txtLevel;
+    [SerializeField] SkillLevelDisplayer _levelDisplayer;
 
     Action<PopupChooseSkillItemController> onClick;
 
@@ -23,7 +23,7 @@ public class PopupChooseSkillItemController : MonoBehaviour
         _imgIcon.sprite = skillInfo.image;
         _txtDescription.text = skillInfo.levelDescriptions[level - 1];
         _txtName.text = skillInfo.name;
-        _txtLevel.text = "Level " + level.ToString();
+        _levelDisplayer.SetLevel(level);
     }
 
     public void OnClick()

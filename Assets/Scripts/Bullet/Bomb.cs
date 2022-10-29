@@ -26,6 +26,8 @@ public class Bomb : Bullet
         tick += Time.deltaTime;
         if (tick >= _timeUntilExplode && !exploded)
         {
+            AudioController.Instance.PlayAudio(Audio.Explosion);
+
             _explodeEffect.SetActive(true);
             Destroy(gameObject, _timeToDisappearAfterExplode);
 

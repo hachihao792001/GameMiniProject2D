@@ -54,6 +54,15 @@ public class PlayerAttacking : MonoBehaviour
                     }
 
                     _bulletTimers[i] = 0;
+
+                    if (_bulletInfos[i].type == BulletType.Normal)
+                    {
+                        AudioController.Instance.PlayAudio(Audio.ShootNormal);
+                    }
+                    else
+                    {
+                        AudioController.Instance.PlayAudio(Audio.ThrowSomething);
+                    }
                 }
             }
         }

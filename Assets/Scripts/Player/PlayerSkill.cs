@@ -10,6 +10,12 @@ public class PlayerSkill : MonoBehaviour
 
     public void UpgradeSkill(SkillType skillType)
     {
+        if (skillType == SkillType.Heal)
+        {
+            player.PlayerHealth.AddHealth(GameInformation.Instance.skillInfos.Find(x => x.type == SkillType.Heal).upgradeActions[0].value);
+            return;
+        }
+
         if (skillLevels.ContainsKey(skillType))
         {
             if (skillLevels[skillType] < 3)

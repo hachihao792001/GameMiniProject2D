@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 3
   name: Ball
   levelDescriptions:
-  - Bounce off zombies
+  - Bounce off enemies
   - Throw another ball to the opposite direction
   - Damage +1
   upgradeActions:

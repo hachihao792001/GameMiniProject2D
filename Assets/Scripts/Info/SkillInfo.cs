@@ -18,7 +18,9 @@ public enum SkillType
     IncreaseAttackRange = 106,
 
     Sword = 201,
-    ForceField = 202
+    ForceField = 202,
+    
+    Heal = 301
 }
 
 public enum SkillUpgradeActionType
@@ -39,7 +41,9 @@ public enum SkillUpgradeActionType
 
     IncreaseHelperDamage = 201,
     IncreaseHelperAmount = 202,
-    IncreaseHelperRange = 203
+    IncreaseHelperRange = 203,
+
+    Heal = 301
 }
 
 [System.Serializable]
