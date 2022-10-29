@@ -25,4 +25,4 @@ MonoBehaviour:
     value: 1
   - type: 105
     value: 2
-  image: {fileID: 21300000, guid: 0e07c8fb8158b4d95bc5184c10777d99, type: 3}
+  image: {fileID: 21300000, guid: ea73c8c20afcd4bf4b8a82f0bedfe2ff, type: 3}

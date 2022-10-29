@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19b28c41d5d3a56479894b6eff19404b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delayBetweenTakingDamage: 2
+  _delayBetweenTakingDamage: 1
   FullHealth: 100
   currentHealth: 0
   _healthBar: {fileID: 1511222807}
@@ -1397,6 +1397,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 23aef23c2e0af05459bbd33d31fa09fb, type: 2}
   - {fileID: 11400000, guid: 78cf60a06cec7e14ca0de0a93ed5b378, type: 2}
   - {fileID: 11400000, guid: 3a4cebbc14823a347a130380ee34d315, type: 2}
+  - {fileID: 11400000, guid: 63acf9c83b6126c4e9c5e2c2bc8fd5f0, type: 2}
   levelXPs: 03000000050000000a0000000c0000000e0000000f00000014000000160000001800000019000000
 --- !u!4 &1033274372
 Transform:
