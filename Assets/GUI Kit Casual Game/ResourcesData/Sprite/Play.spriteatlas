@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 85f9a36fe16274493ab676692b113022, type: 3}
-    totalSpriteSurfaceArea: 8034435
+    totalSpriteSurfaceArea: 8024507
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -58,7 +58,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 16ab75e0c41064424b1679e52085f2d1, type: 3}
   - {fileID: 21300000, guid: 890d7ae05f8284a70afedaa1db6be319, type: 3}
   - {fileID: 21300000, guid: 9107d96184f17498b9e0058c1b9fc98a, type: 3}
-  - {fileID: 21300000, guid: d86099816ff8b4746ac08e55954073c0, type: 3}
   - {fileID: 21300000, guid: 59dd37a122745414ba1162e2ab7e8edf, type: 3}
   - {fileID: 21300000, guid: 4a9772c11a10c496eaec081fa5780868, type: 3}
   - {fileID: 21300000, guid: 5b3201120c6b845a788788a662f00338, type: 3}
@@ -132,7 +131,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 532b473d3117a4bfea1c0a9b6ddc1cc2, type: 3}
   - {fileID: 21300000, guid: 5bb5109d127b841fe9a0a13a4d5af8f0, type: 3}
   - {fileID: 21300000, guid: f4268d9db1c2b4662a75c5ec35f9b852, type: 3}
-  - {fileID: 21300000, guid: aa2b4fdd630c64600957a89ad24467ad, type: 3}
   - {fileID: 21300000, guid: ed3aaf0e78f314d538320fe6f0320773, type: 3}
   - {fileID: 21300000, guid: 448bf45e6aab54d5fbdf1facc9f0ad70, type: 3}
   - {fileID: 21300000, guid: 63c9285ef587b4f67af3b9871ad4cbd3, type: 3}
@@ -155,7 +153,6 @@ SpriteAtlas:
   - play_hp_info_icon_2
   - play_user_profile_bg_line
   - txt_triple_kill
-  - minimap_me_icon_2
   - user_player_prg_back_blue
   - user_player_prg_blue
   - user_player_prg_bg_left
@@ -229,7 +226,6 @@ SpriteAtlas:
   - play_skill_2_dimed
   - play_bottom_character_bg_green
   - play_skill_0
-  - minimap_me_icon_1
   - play_hp_info_icon_1
   - play_character_sample_5
   - play_character_sample_3
