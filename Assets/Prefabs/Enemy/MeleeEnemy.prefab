@@ -274,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalHealth: 10
   CurrentHealth: 0
-  _speed: 1
+  _speed: 1.2
   _meleeDamage: 5
   _flashingRed: {fileID: 5802404196911135630}
   _rb: {fileID: 242140637}
