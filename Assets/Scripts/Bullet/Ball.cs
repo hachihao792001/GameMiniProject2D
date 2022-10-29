@@ -17,6 +17,10 @@ public class Ball : Bullet
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
             enemy.TakeHealth(getFinalDamage());
+        }
+
+        if(Utils.LayerInLayerMask(collision.gameObject.layer, GameController.Instance.BallHitLayerMask)) 
+        {
             rb.velocity = collision.contacts[0].normal * _speed;
         }
     }

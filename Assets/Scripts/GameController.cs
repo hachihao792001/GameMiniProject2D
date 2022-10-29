@@ -9,6 +9,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public const string XP_TAG = "XP";
 
     public LayerMask EnemyLayerMask;
+    public LayerMask BallHitLayerMask;
 
     public Camera MainCamera;
     public Transform Canvas;

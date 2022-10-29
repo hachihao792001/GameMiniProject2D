@@ -17,10 +17,14 @@ public class FlashingRed : MonoBehaviour
     }
     private void Update()
     {
-        if (flashCount <= 0) return;
+        if (flashCount <= 0)
+        {
+            _sr.color = Color.white;
+            return;
+        }
 
         tick += Time.deltaTime;
-        if(tick >= delayBetweenFlash)
+        if (tick >= delayBetweenFlash)
         {
             _sr.color = _sr.color == Color.white ? Color.red : Color.white;
 

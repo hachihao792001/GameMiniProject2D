@@ -21,4 +21,9 @@ public class Utils : MonoBehaviour
         }
         return result;
     }
+
+    public static bool LayerInLayerMask(int layer, LayerMask layerMask)
+    {
+        return layerMask == (layerMask | (1 << layer));
+    }
 }
