@@ -32,6 +32,24 @@ public class PopupChooseSkillController : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            OnItemClicked(_items[0]);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            OnItemClicked(_items[1]);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            OnItemClicked(_items[2]);
+        }
+    }
+#endif
+
     void OnItemClicked(PopupChooseSkillItemController item)
     {
         playerSkill.UpgradeSkill(item.skillType);

@@ -57,7 +57,7 @@ public class PlayerHealth : MonoBehaviour
 
             _flashingRed.DoFlash();
             GameController.Instance.DamageTextController.SpawnNewText(transform.position, h);
-            AudioController.Instance.PlayAudio(Random.Range(0, 2) == 0 ? Audio.PlayerHurt1 : Audio.PlayerHurt2);
+            AudioController.Instance.PlayRandomPlayerHurt();
 
             if (currentHealth == 0)
             {

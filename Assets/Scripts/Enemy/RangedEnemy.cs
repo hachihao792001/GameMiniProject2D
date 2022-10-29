@@ -73,6 +73,8 @@ public class RangedEnemy : Enemy
         {
             RangedEnemyBullet newBullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
             newBullet.Init(_bulletDamage, GameController.Instance.Player.transform.position);
+
+            AudioController.Instance.PlayAudio(Audio.RangedEnemyShoot);
         }
     }
 }

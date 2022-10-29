@@ -59,6 +59,10 @@ public class PlayerAttacking : MonoBehaviour
                     {
                         AudioController.Instance.PlayAudio(Audio.ShootNormal);
                     }
+                    else
+                    {
+                        AudioController.Instance.PlayAudio(Audio.ThrowSomething);
+                    }
                 }
             }
         }

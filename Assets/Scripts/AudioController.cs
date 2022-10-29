@@ -1,19 +1,20 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public enum Audio
 {
-    EnemyHurt,
+    EnemyHurt1,
     ShootNormal,
-    ShootBoomearang,
-    ShootBall,
+    ThrowSomething,
     PlayerHurt1,
     PlayerHurt2,
     Explosion,
     PickUpXP,
     ButtonClick,
+    RangedEnemyShoot,
+    EnemyHurt2
 }
 
 [Serializable]
@@ -40,5 +41,16 @@ public class AudioController : MonoSingleton<AudioController>
     public void PlayAudio(Audio audio)
     {
         AudioInfos.Find(x => x.audio == audio).audioSrc.Play();
+    }
+
+    public void PlayRandomPlayerHurt()
+    {
+        PlayAudio(Random.Range(0, 2) == 0 ? Audio.PlayerHurt1 : Audio.PlayerHurt2);
+    }
+
+    public void PlayRandomEnemyHurt()
+    {
+        PlayAudio(Random.Range(0, 2) == 0 ? Audio.EnemyHurt1 : Audio.EnemyHurt2);
+
     }
 }

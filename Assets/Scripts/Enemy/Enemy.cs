@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 
         _flashingRed.DoFlash();
         GameController.Instance.DamageTextController.SpawnNewText(transform.position, h);
-        AudioController.Instance.PlayAudio(Audio.EnemyHurt);
+        AudioController.Instance.PlayRandomEnemyHurt();
 
         if (CurrentHealth <= 0)
         {

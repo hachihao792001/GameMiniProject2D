@@ -17,11 +17,18 @@ public class PlayerMoving : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
         Vector2 pcInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (pcInput.magnitude > 1)
+            pcInput.Normalize();
+
         if (pcInput != Vector2.zero)
             _rb.velocity = pcInput * (_speed + bonusSpeed);
         else
             _rb.velocity = _joyStick.Input * (_speed + bonusSpeed);
+#else
+            _rb.velocity = _joyStick.Input * (_speed + bonusSpeed);
+#endif
     }
 
     public void AddBonusSpeed(float value)
