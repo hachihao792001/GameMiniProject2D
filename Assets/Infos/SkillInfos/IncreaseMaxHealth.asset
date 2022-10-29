@@ -19,10 +19,10 @@ MonoBehaviour:
   - Max health +10
   - Max health +20
   upgradeActions:
-  - type: 6
+  - type: 102
     value: 10
-  - type: 6
+  - type: 102
     value: 10
-  - type: 6
+  - type: 102
     value: 10
   image: {fileID: 21300000, guid: 9876fcfabd3b2425687da38e45dedbc2, type: 3}

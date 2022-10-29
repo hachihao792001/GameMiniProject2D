@@ -60,7 +60,7 @@ public class PlayerSkill : MonoBehaviour
                     player.PlayerHelper.SwordHelperAddOneMoreSword();
                     break;
                 case SkillUpgradeActionType.IncreaseHelperRange:
-                    player.PlayerHelper.ForceFieldIncreaseRange();
+                    player.PlayerHelper.ForceFieldIncreaseRange(upgradeActionValue);
                     break;
             }
         }

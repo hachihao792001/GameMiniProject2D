@@ -37,8 +37,8 @@ public class PlayerHelper : MonoBehaviour
         (helpers.Find(x => x.type == HelperType.Sword).helper as SwordHelper).AddOneMoreSword();
     }
 
-    public void ForceFieldIncreaseRange()
+    public void ForceFieldIncreaseRange(float value)
     {
-        //(helpers.Find(x => x.type == HelperType.Sword).helper as ForceFieldHelper);
+        (helpers.Find(x => x.type == HelperType.ForceField).helper as ForceFieldHelper).AddRange(value);
     }
 }

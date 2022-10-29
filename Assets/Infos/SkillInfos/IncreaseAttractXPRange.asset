@@ -19,10 +19,10 @@ MonoBehaviour:
   - Attract XP Range +1
   - Attract XP Range +2
   upgradeActions:
-  - type: 9
+  - type: 105
     value: 1
-  - type: 9
+  - type: 105
     value: 1
-  - type: 9
+  - type: 105
     value: 2
   image: {fileID: 21300000, guid: 0e07c8fb8158b4d95bc5184c10777d99, type: 3}
