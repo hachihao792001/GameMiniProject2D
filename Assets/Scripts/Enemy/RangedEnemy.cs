@@ -10,13 +10,13 @@ public class RangedEnemy : Enemy
     [SerializeField] SpriteRenderer _sr;
 
     [SerializeField] Animator _animator;
-    [SerializeField] RangedEnemyBullet _bulletPrefab;
+    [SerializeField] protected RangedEnemyBullet _bulletPrefab;
     [SerializeField] float _startShootingRange;
     [SerializeField] float _stopShootingRange;
 
-    [SerializeField] float _bulletDamage;
+    [SerializeField] protected float _bulletDamage;
 
-    bool isInShootingState;
+    protected bool isInShootingState;
 
     public override void Start()
     {
@@ -67,7 +67,7 @@ public class RangedEnemy : Enemy
         }
     }
 
-    public void ShootBullet()   //animation event
+    public virtual void ShootBullet()   //animation event
     {
         if (isInShootingState)
         {

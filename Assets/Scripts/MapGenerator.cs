@@ -1,6 +1,14 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public struct StageMapPiecePrefab
+{
+    public Stage stage;
+    public Transform prefab;
+    public float mapPieceSize;
+}
 
 public struct MapPieceInfo
 {
@@ -10,14 +18,20 @@ public struct MapPieceInfo
 
 public class MapGenerator : MonoBehaviour
 {
-    [SerializeField] Transform _mapPiecePrefab;
-    [SerializeField] float _mapPieceSize;
+    [SerializeField] List<StageMapPiecePrefab> _stageMapPiecePrefabs;
 
     List<MapPieceInfo> currentPieces = new List<MapPieceInfo>();
 
+    StageMapPiecePrefab currentStageMapPiecePrefab;
+
+    private void Start()
+    {
+        currentStageMapPiecePrefab = _stageMapPiecePrefabs.Find(x => x.stage == GameController.Instance.currentStage);
+    }
+
     private void Update()
     {
-        List<Vector2> current4PieceCoords = GetPieceCoords(GameController.Instance.Player.transform.position);
+        List<Vector2> current4PieceCoords = GetPieceCoords(GameController.Instance.Player.transform.position, currentStageMapPiecePrefab.mapPieceSize);
 
         List<MapPieceInfo> shouldBeRemovedPieces = currentPieces.FindAll(x => !current4PieceCoords.Contains(x.coord));
         foreach (MapPieceInfo pieceInfo in shouldBeRemovedPieces)
@@ -32,17 +46,17 @@ public class MapGenerator : MonoBehaviour
             {
                 MapPieceInfo newPieceInfo;
                 newPieceInfo.coord = coord;
-                newPieceInfo.piece = Instantiate(_mapPiecePrefab, coord * _mapPieceSize, Quaternion.identity);
+                newPieceInfo.piece = Instantiate(currentStageMapPiecePrefab.prefab, coord * currentStageMapPiecePrefab.mapPieceSize, Quaternion.identity);
 
                 currentPieces.Add(newPieceInfo);
             }
         }
     }
 
-    List<Vector2> GetPieceCoords(Vector2 playerPos)
+    List<Vector2> GetPieceCoords(Vector2 playerPos, float mapPieceSize)
     {
-        int kx = Mathf.CeilToInt((playerPos.x - _mapPieceSize / 2) / _mapPieceSize);
-        int ky = Mathf.CeilToInt((playerPos.y - _mapPieceSize / 2) / _mapPieceSize);
+        int kx = Mathf.CeilToInt((playerPos.x - mapPieceSize / 2) / mapPieceSize);
+        int ky = Mathf.CeilToInt((playerPos.y - mapPieceSize / 2) / mapPieceSize);
         List<Vector2> result = new List<Vector2>();
         for (int i = -1; i <= 1; i++)
         {

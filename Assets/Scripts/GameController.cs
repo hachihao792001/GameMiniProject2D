@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoSingleton<GameController>
+public class GameController : OneSceneMonoSingleton<GameController>
 {
     public const string PLAYER_TAG = "Player";
     public const string ENEMY_TAG = "Enemy";
@@ -16,4 +16,12 @@ public class GameController : MonoSingleton<GameController>
     public GameObject XPPrefab;
     public DamageTextController DamageTextController;
     public PopupChooseSkillController PopupChooseSkillController;
+
+    public Stage currentStage;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
+    }
 }
