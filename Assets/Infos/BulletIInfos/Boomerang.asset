@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddb1931eda693e74ab3b280d00967ea1, type: 3}
-  m_Name: NormalBullet
+  m_Name: Boomerang
   m_EditorClassIdentifier: 
-  type: 0
-  description: 
-  shootInterval: 1
-  damage: 5
-  image: {fileID: 0}
-  prefab: {fileID: -8176635269209820893, guid: 15cb0df526c085a488671300706de048, type: 3}
+  type: 2
+  shootInterval: 2
+  damage: 10
+  prefab: {fileID: 5121623968690120967, guid: bb11098a9edc0394081b343d5cc437b4, type: 3}

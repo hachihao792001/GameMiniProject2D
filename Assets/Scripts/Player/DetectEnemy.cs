@@ -8,6 +8,8 @@ public class DetectEnemy : MonoBehaviour
 
     public Transform nearestEnemy;
 
+    [SerializeField] CircleCollider2D _collider;
+
     private void Start()
     {
         InvokeRepeating(nameof(UpdateNearestEnemy), 0, 1f);
@@ -50,5 +52,10 @@ public class DetectEnemy : MonoBehaviour
             _enemiesInZone.Remove(collision.transform);
             UpdateNearestEnemy();
         }
+    }
+
+    public void IncreaseRange(float value)
+    {
+        _collider.radius += value;
     }
 }

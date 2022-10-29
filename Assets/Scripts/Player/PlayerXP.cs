@@ -11,6 +11,8 @@ public class PlayerXP : MonoBehaviour
     [SerializeField] Slider _xpBar;
     [SerializeField] Text _levelText;
 
+    public DetectXP DetectXP;
+
     private void Start()
     {
         _xpBar.value = 0;
@@ -27,6 +29,8 @@ public class PlayerXP : MonoBehaviour
 
             if (XP >= GameInformation.Instance.levelXPs[currentLevel - 1])
             {
+                GameController.Instance.PopupChooseSkillController.Show();
+
                 XP = 0;
                 _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
                 currentLevel++;

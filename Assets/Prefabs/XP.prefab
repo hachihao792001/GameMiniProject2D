@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3545722777209334186}
   - component: {fileID: 3545722777209334185}
   - component: {fileID: 3545722777209334187}
+  - component: {fileID: -4426648183327728444}
   m_Layer: 0
   m_Name: XP
   m_TagString: XP
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1059117175
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 676c6af8ea4934e71841025db9817c7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,3 +110,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 1.22}
   m_EdgeRadius: 0
+--- !u!114 &-4426648183327728444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545722777209334184}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df93f616795b83646ad622ab669b7d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lerpRateIncrease: 5
+  _startLerpRate: 3

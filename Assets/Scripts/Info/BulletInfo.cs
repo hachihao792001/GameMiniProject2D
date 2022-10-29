@@ -4,17 +4,18 @@ using UnityEngine;
 
 public enum BulletType
 {
+    None = 0,
     Normal,
-    Boomerang
+    Boomerang,
+    Bomb,
+    Ball
 }
 
 [CreateAssetMenu(fileName = "BulletInfo", menuName = "ScriptableObjects/BulletInfo")]
 public class BulletInfo : ScriptableObject
 {
     public BulletType type;
-    public string description;
     public float shootInterval;
     public float damage;
-    public Sprite image;
     public Bullet prefab;
 }
