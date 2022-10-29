@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Stage
 {
     DeathCity,
-    CloudyBeach,
+    CloudyPark,
     StampedeWorld
 }
 
 
 public class StageController : MonoBehaviour
 {
-    public void playGame(Stage stage)
+    public Stage stage;
+    public void playGame()
     {
+        PlayerPrefs.SetInt("stage", (int)stage);
+        SceneManager.LoadScene("Game");
     }
 }

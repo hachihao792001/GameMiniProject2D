@@ -1,0 +1,3288 @@
+fileFormatVersion: 2
+guid: 24ac7e6bb7ef916449e2efffe2a961ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5062634816999002193
+    second: roadTextures_tilesheet@2_0
+  - first:
+      213: 8450269581155767637
+    second: roadTextures_tilesheet@2_1
+  - first:
+      213: 6331415801680052399
+    second: roadTextures_tilesheet@2_2
+  - first:
+      213: 1750181025047850778
+    second: roadTextures_tilesheet@2_3
+  - first:
+      213: 8121391107819945891
+    second: roadTextures_tilesheet@2_4
+  - first:
+      213: 7428641786270235100
+    second: roadTextures_tilesheet@2_5
+  - first:
+      213: -3614959912489967103
+    second: roadTextures_tilesheet@2_6
+  - first:
+      213: 8785679292683922210
+    second: roadTextures_tilesheet@2_7
+  - first:
+      213: 7843605623852803760
+    second: roadTextures_tilesheet@2_8
+  - first:
+      213: 1293998428655343136
+    second: roadTextures_tilesheet@2_9
+  - first:
+      213: -3467761334160577221
+    second: roadTextures_tilesheet@2_10
+  - first:
+      213: -2723884539981649845
+    second: roadTextures_tilesheet@2_11
+  - first:
+      213: 7093820464548617158
+    second: roadTextures_tilesheet@2_12
+  - first:
+      213: -7588850958625661357
+    second: roadTextures_tilesheet@2_13
+  - first:
+      213: -151575107460210480
+    second: roadTextures_tilesheet@2_14
+  - first:
+      213: -2872638883788940169
+    second: roadTextures_tilesheet@2_15
+  - first:
+      213: -2779665757022034129
+    second: roadTextures_tilesheet@2_16
+  - first:
+      213: -7076894403192280454
+    second: roadTextures_tilesheet@2_17
+  - first:
+      213: 8562789503137657720
+    second: roadTextures_tilesheet@2_18
+  - first:
+      213: 7149923053153866533
+    second: roadTextures_tilesheet@2_19
+  - first:
+      213: -4869662523648182253
+    second: roadTextures_tilesheet@2_20
+  - first:
+      213: -721130152430647561
+    second: roadTextures_tilesheet@2_21
+  - first:
+      213: 2231249859675992607
+    second: roadTextures_tilesheet@2_22
+  - first:
+      213: -5102698612567269174
+    second: roadTextures_tilesheet@2_23
+  - first:
+      213: -4660909263649171327
+    second: roadTextures_tilesheet@2_24
+  - first:
+      213: 7038500732874769975
+    second: roadTextures_tilesheet@2_25
+  - first:
+      213: 674907233724399624
+    second: roadTextures_tilesheet@2_26
+  - first:
+      213: 3574118344250303548
+    second: roadTextures_tilesheet@2_27
+  - first:
+      213: 6115706507827290911
+    second: roadTextures_tilesheet@2_28
+  - first:
+      213: -5608557844218818945
+    second: roadTextures_tilesheet@2_29
+  - first:
+      213: -1173453135013257064
+    second: roadTextures_tilesheet@2_30
+  - first:
+      213: 4637172765726150270
+    second: roadTextures_tilesheet@2_31
+  - first:
+      213: -578171301565552031
+    second: roadTextures_tilesheet@2_32
+  - first:
+      213: 7837968434968189260
+    second: roadTextures_tilesheet@2_33
+  - first:
+      213: -2379044950244508561
+    second: roadTextures_tilesheet@2_34
+  - first:
+      213: 5450027142606985573
+    second: roadTextures_tilesheet@2_35
+  - first:
+      213: -887194019758526244
+    second: roadTextures_tilesheet@2_36
+  - first:
+      213: -7519033039787950299
+    second: roadTextures_tilesheet@2_37
+  - first:
+      213: 4497142008393897791
+    second: roadTextures_tilesheet@2_38
+  - first:
+      213: -1091005180529666889
+    second: roadTextures_tilesheet@2_39
+  - first:
+      213: 7458513299733560619
+    second: roadTextures_tilesheet@2_40
+  - first:
+      213: -7704241662846593458
+    second: roadTextures_tilesheet@2_41
+  - first:
+      213: 242931376876479552
+    second: roadTextures_tilesheet@2_42
+  - first:
+      213: -8914004390077419895
+    second: roadTextures_tilesheet@2_43
+  - first:
+      213: 4228641688359271016
+    second: roadTextures_tilesheet@2_44
+  - first:
+      213: -6657603059684327301
+    second: roadTextures_tilesheet@2_45
+  - first:
+      213: -4254038596695273381
+    second: roadTextures_tilesheet@2_46
+  - first:
+      213: 3948503013302796304
+    second: roadTextures_tilesheet@2_47
+  - first:
+      213: -5959096496223298920
+    second: roadTextures_tilesheet@2_48
+  - first:
+      213: -7682138024888921835
+    second: roadTextures_tilesheet@2_49
+  - first:
+      213: 3737579888197601301
+    second: roadTextures_tilesheet@2_50
+  - first:
+      213: 3306444183563671571
+    second: roadTextures_tilesheet@2_51
+  - first:
+      213: -1911569843437489036
+    second: roadTextures_tilesheet@2_52
+  - first:
+      213: -811277720330958624
+    second: roadTextures_tilesheet@2_53
+  - first:
+      213: 5859252072237228676
+    second: roadTextures_tilesheet@2_54
+  - first:
+      213: -5844462464830937512
+    second: roadTextures_tilesheet@2_55
+  - first:
+      213: -3318280369910834847
+    second: roadTextures_tilesheet@2_56
+  - first:
+      213: 3017305910615637441
+    second: roadTextures_tilesheet@2_57
+  - first:
+      213: -4944692936534641567
+    second: roadTextures_tilesheet@2_58
+  - first:
+      213: -5111092968458969271
+    second: roadTextures_tilesheet@2_59
+  - first:
+      213: 7403373173467252307
+    second: roadTextures_tilesheet@2_60
+  - first:
+      213: -254649018635267964
+    second: roadTextures_tilesheet@2_61
+  - first:
+      213: -2286519737311334361
+    second: roadTextures_tilesheet@2_62
+  - first:
+      213: -4875811953248321315
+    second: roadTextures_tilesheet@2_63
+  - first:
+      213: 7584841992331112936
+    second: roadTextures_tilesheet@2_64
+  - first:
+      213: -6070172283793089474
+    second: roadTextures_tilesheet@2_65
+  - first:
+      213: -6930514330414178703
+    second: roadTextures_tilesheet@2_66
+  - first:
+      213: -2178019466113461118
+    second: roadTextures_tilesheet@2_67
+  - first:
+      213: -9014088108255753310
+    second: roadTextures_tilesheet@2_68
+  - first:
+      213: -5033775105303239308
+    second: roadTextures_tilesheet@2_69
+  - first:
+      213: -7792796193792745820
+    second: roadTextures_tilesheet@2_70
+  - first:
+      213: 413595736753669598
+    second: roadTextures_tilesheet@2_71
+  - first:
+      213: 5428269244180286082
+    second: roadTextures_tilesheet@2_72
+  - first:
+      213: 5666302532526716713
+    second: roadTextures_tilesheet@2_73
+  - first:
+      213: -5348097044219687773
+    second: roadTextures_tilesheet@2_74
+  - first:
+      213: -4149108617032886089
+    second: roadTextures_tilesheet@2_75
+  - first:
+      213: 2182863038474529084
+    second: roadTextures_tilesheet@2_76
+  - first:
+      213: 5477420947247054478
+    second: roadTextures_tilesheet@2_77
+  - first:
+      213: -7101283796242668890
+    second: roadTextures_tilesheet@2_78
+  - first:
+      213: -3166037827568305467
+    second: roadTextures_tilesheet@2_79
+  - first:
+      213: -4582367772866893974
+    second: roadTextures_tilesheet@2_80
+  - first:
+      213: 2638895263862912552
+    second: roadTextures_tilesheet@2_81
+  - first:
+      213: 2635310944833245841
+    second: roadTextures_tilesheet@2_82
+  - first:
+      213: -3623092382019145149
+    second: roadTextures_tilesheet@2_83
+  - first:
+      213: 8429627006548008476
+    second: roadTextures_tilesheet@2_84
+  - first:
+      213: -2906529214980262825
+    second: roadTextures_tilesheet@2_85
+  - first:
+      213: -8025302801600508417
+    second: roadTextures_tilesheet@2_86
+  - first:
+      213: -1929580087841848972
+    second: roadTextures_tilesheet@2_87
+  - first:
+      213: -448274155895399747
+    second: roadTextures_tilesheet@2_88
+  - first:
+      213: 865153075714809278
+    second: roadTextures_tilesheet@2_89
+  - first:
+      213: 260202874797915787
+    second: roadTextures_tilesheet@2_90
+  - first:
+      213: -2598770522390059522
+    second: roadTextures_tilesheet@2_91
+  - first:
+      213: -7081752352759539842
+    second: roadTextures_tilesheet@2_92
+  - first:
+      213: -557010222812949932
+    second: roadTextures_tilesheet@2_93
+  - first:
+      213: -4308211255481276578
+    second: roadTextures_tilesheet@2_94
+  - first:
+      213: 4744649303792289589
+    second: roadTextures_tilesheet@2_95
+  - first:
+      213: 2746539129262784125
+    second: roadTextures_tilesheet@2_96
+  - first:
+      213: -3752406950551574467
+    second: roadTextures_tilesheet@2_97
+  - first:
+      213: 3645030853180220259
+    second: roadTextures_tilesheet@2_98
+  - first:
+      213: 6983250675720889552
+    second: roadTextures_tilesheet@2_99
+  - first:
+      213: -8237795096654719242
+    second: roadTextures_tilesheet@2_100
+  - first:
+      213: -4068168582019369926
+    second: roadTextures_tilesheet@2_101
+  - first:
+      213: 7518887157706014583
+    second: roadTextures_tilesheet@2_102
+  - first:
+      213: 2898555586515494625
+    second: roadTextures_tilesheet@2_103
+  - first:
+      213: 4282431017502728109
+    second: roadTextures_tilesheet@2_104
+  - first:
+      213: -3600441975912870669
+    second: roadTextures_tilesheet@2_105
+  - first:
+      213: 9117202922408538324
+    second: roadTextures_tilesheet@2_106
+  - first:
+      213: 4540162479088640122
+    second: roadTextures_tilesheet@2_107
+  - first:
+      213: 5869427271849179314
+    second: roadTextures_tilesheet@2_108
+  - first:
+      213: -4263633886719668809
+    second: roadTextures_tilesheet@2_109
+  - first:
+      213: -8083812211996675463
+    second: roadTextures_tilesheet@2_110
+  - first:
+      213: 7883408693626769628
+    second: roadTextures_tilesheet@2_111
+  - first:
+      213: 699259969050060535
+    second: roadTextures_tilesheet@2_112
+  - first:
+      213: 8162846652649934448
+    second: roadTextures_tilesheet@2_113
+  - first:
+      213: 7636322067985134548
+    second: roadTextures_tilesheet@2_114
+  - first:
+      213: 2178453528808910387
+    second: roadTextures_tilesheet@2_115
+  - first:
+      213: 3324121029486802448
+    second: roadTextures_tilesheet@2_116
+  - first:
+      213: -8574230102315096397
+    second: roadTextures_tilesheet@2_117
+  - first:
+      213: 5501672326222892571
+    second: roadTextures_tilesheet@2_118
+  - first:
+      213: -7640826042049321378
+    second: roadTextures_tilesheet@2_119
+  - first:
+      213: 6683377985540090562
+    second: roadTextures_tilesheet@2_120
+  - first:
+      213: -7563988156505047046
+    second: roadTextures_tilesheet@2_121
+  - first:
+      213: 3850596355101031394
+    second: roadTextures_tilesheet@2_122
+  - first:
+      213: -8399327184894586633
+    second: roadTextures_tilesheet@2_123
+  - first:
+      213: -7946220903512142809
+    second: roadTextures_tilesheet@2_124
+  - first:
+      213: 8540425092814724280
+    second: roadTextures_tilesheet@2_125
+  - first:
+      213: 1804561145988498363
+    second: roadTextures_tilesheet@2_126
+  - first:
+      213: 815262053841721563
+    second: roadTextures_tilesheet@2_127
+  - first:
+      213: 8709160163538545931
+    second: roadTextures_tilesheet@2_128
+  - first:
+      213: -5276733648953213025
+    second: roadTextures_tilesheet@2_129
+  - first:
+      213: -186554726017095468
+    second: roadTextures_tilesheet@2_130
+  - first:
+      213: 8240859986300595640
+    second: roadTextures_tilesheet@2_131
+  - first:
+      213: -2972137213911130868
+    second: roadTextures_tilesheet@2_132
+  - first:
+      213: -7418888996728342245
+    second: roadTextures_tilesheet@2_133
+  - first:
+      213: -515033778194414316
+    second: roadTextures_tilesheet@2_134
+  - first:
+      213: 6759305754402360384
+    second: roadTextures_tilesheet@2_135
+  - first:
+      213: -8746588021913415104
+    second: roadTextures_tilesheet@2_136
+  - first:
+      213: 3240151556561294053
+    second: roadTextures_tilesheet@2_137
+  - first:
+      213: -6061016313202848968
+    second: roadTextures_tilesheet@2_138
+  - first:
+      213: 8275292306187812312
+    second: roadTextures_tilesheet@2_139
+  - first:
+      213: -4606400124226569910
+    second: roadTextures_tilesheet@2_140
+  - first:
+      213: -4561451972940703614
+    second: roadTextures_tilesheet@2_141
+  - first:
+      213: 1899582786050257705
+    second: roadTextures_tilesheet@2_142
+  - first:
+      213: -3193173327527635633
+    second: roadTextures_tilesheet@2_143
+  - first:
+      213: 2216785393516205773
+    second: roadTextures_tilesheet@2_144
+  - first:
+      213: -7989520921402331995
+    second: roadTextures_tilesheet@2_145
+  - first:
+      213: 172652834708654533
+    second: roadTextures_tilesheet@2_146
+  - first:
+      213: -1961107384061991673
+    second: roadTextures_tilesheet@2_147
+  - first:
+      213: 5173873657636682140
+    second: roadTextures_tilesheet@2_148
+  - first:
+      213: -1226264907411758280
+    second: roadTextures_tilesheet@2_149
+  - first:
+      213: 8668659388360968139
+    second: roadTextures_tilesheet@2_150
+  - first:
+      213: 1841185784956408629
+    second: roadTextures_tilesheet@2_151
+  - first:
+      213: 8744358967637445483
+    second: roadTextures_tilesheet@2_152
+  - first:
+      213: -9109186902449029858
+    second: roadTextures_tilesheet@2_153
+  - first:
+      213: 5314676324732169153
+    second: roadTextures_tilesheet@2_154
+  - first:
+      213: 7938819417474477065
+    second: roadTextures_tilesheet@2_155
+  - first:
+      213: -8196607600695321071
+    second: roadTextures_tilesheet@2_156
+  - first:
+      213: -4958664227383441816
+    second: roadTextures_tilesheet@2_157
+  - first:
+      213: 6208733065455557045
+    second: roadTextures_tilesheet@2_158
+  - first:
+      213: -721254347786103521
+    second: roadTextures_tilesheet@2_159
+  - first:
+      213: 2852233269205925130
+    second: roadTextures_tilesheet@2_160
+  - first:
+      213: -8971155518872440527
+    second: roadTextures_tilesheet@2_161
+  - first:
+      213: -7652391071151614234
+    second: roadTextures_tilesheet@2_162
+  - first:
+      213: -4625964778134971973
+    second: roadTextures_tilesheet@2_163
+  - first:
+      213: 1448184224759209286
+    second: roadTextures_tilesheet@2_164
+  - first:
+      213: -4648363941557751775
+    second: roadTextures_tilesheet@2_165
+  - first:
+      213: -7681176013891980735
+    second: roadTextures_tilesheet@2_166
+  - first:
+      213: -5395197846541232690
+    second: roadTextures_tilesheet@2_167
+  - first:
+      213: -928074791796468196
+    second: roadTextures_tilesheet@2_168
+  - first:
+      213: 5493885224242381191
+    second: roadTextures_tilesheet@2_169
+  - first:
+      213: -4057024026612934965
+    second: roadTextures_tilesheet@2_170
+  - first:
+      213: -1109844915115894602
+    second: roadTextures_tilesheet@2_171
+  - first:
+      213: -8559573272717605549
+    second: roadTextures_tilesheet@2_172
+  - first:
+      213: 2483727724578615953
+    second: roadTextures_tilesheet@2_173
+  - first:
+      213: -7550809263107131102
+    second: roadTextures_tilesheet@2_174
+  - first:
+      213: -5683007462072346676
+    second: roadTextures_tilesheet@2_175
+  - first:
+      213: -1157013790039717150
+    second: roadTextures_tilesheet@2_176
+  - first:
+      213: 5287814480043078858
+    second: roadTextures_tilesheet@2_177
+  - first:
+      213: -4816584396764209166
+    second: roadTextures_tilesheet@2_178
+  - first:
+      213: -8313018972367928446
+    second: roadTextures_tilesheet@2_179
+  - first:
+      213: -8171444052884333872
+    second: roadTextures_tilesheet@2_180
+  - first:
+      213: 3981437788230811295
+    second: roadTextures_tilesheet@2_181
+  - first:
+      213: -8594553419554973871
+    second: roadTextures_tilesheet@2_182
+  - first:
+      213: 7480701923551021233
+    second: roadTextures_tilesheet@2_183
+  - first:
+      213: -5089520329386969400
+    second: roadTextures_tilesheet@2_184
+  - first:
+      213: -2235171049774517119
+    second: roadTextures_tilesheet@2_185
+  - first:
+      213: 353510227998843807
+    second: roadTextures_tilesheet@2_186
+  - first:
+      213: -6359194571269203111
+    second: roadTextures_tilesheet@2_187
+  - first:
+      213: -663888061564522178
+    second: roadTextures_tilesheet@2_188
+  - first:
+      213: -8321245976024854589
+    second: roadTextures_tilesheet@2_189
+  - first:
+      213: 8435961938243435186
+    second: roadTextures_tilesheet@2_190
+  - first:
+      213: -3326438762036846687
+    second: roadTextures_tilesheet@2_191
+  - first:
+      213: -7761094595785857244
+    second: roadTextures_tilesheet@2_192
+  - first:
+      213: -521585795719629636
+    second: roadTextures_tilesheet@2_193
+  - first:
+      213: 8662851587631507349
+    second: roadTextures_tilesheet@2_194
+  - first:
+      213: 2598055771993719236
+    second: roadTextures_tilesheet@2_195
+  - first:
+      213: 2488468438068657849
+    second: roadTextures_tilesheet@2_196
+  - first:
+      213: -3596544746908692659
+    second: roadTextures_tilesheet@2_197
+  - first:
+      213: 4305966033990240501
+    second: roadTextures_tilesheet@2_198
+  - first:
+      213: 8820460192260011859
+    second: roadTextures_tilesheet@2_199
+  - first:
+      213: 8924962941355133340
+    second: roadTextures_tilesheet@2_200
+  - first:
+      213: 4406553439358487944
+    second: roadTextures_tilesheet@2_201
+  - first:
+      213: -7964463374114752963
+    second: roadTextures_tilesheet@2_202
+  - first:
+      213: -2723885668763241858
+    second: roadTextures_tilesheet@2_203
+  - first:
+      213: -1523506814108645836
+    second: roadTextures_tilesheet@2_204
+  - first:
+      213: 4033272796598403833
+    second: roadTextures_tilesheet@2_205
+  - first:
+      213: -6373473958390220526
+    second: roadTextures_tilesheet@2_206
+  - first:
+      213: -6779696529945204180
+    second: roadTextures_tilesheet@2_207
+  - first:
+      213: 2997864571333321307
+    second: roadTextures_tilesheet@2_208
+  - first:
+      213: 9025333022958854596
+    second: roadTextures_tilesheet@2_209
+  - first:
+      213: 804329634684443789
+    second: roadTextures_tilesheet@2_210
+  - first:
+      213: 5135460604842022328
+    second: roadTextures_tilesheet@2_211
+  - first:
+      213: -4760495082558771704
+    second: roadTextures_tilesheet@2_212
+  - first:
+      213: 162898869226868837
+    second: roadTextures_tilesheet@2_213
+  - first:
+      213: 8182037409405805838
+    second: roadTextures_tilesheet@2_214
+  - first:
+      213: 8522143201907516359
+    second: roadTextures_tilesheet@2_215
+  - first:
+      213: -2316879685693650547
+    second: roadTextures_tilesheet@2_216
+  - first:
+      213: -285605951278336813
+    second: roadTextures_tilesheet@2_217
+  - first:
+      213: -9010281397470614706
+    second: roadTextures_tilesheet@2_218
+  - first:
+      213: -376033822543962573
+    second: roadTextures_tilesheet@2_219
+  - first:
+      213: -365449102471159611
+    second: roadTextures_tilesheet@2_220
+  - first:
+      213: -5609361440896910190
+    second: roadTextures_tilesheet@2_221
+  - first:
+      213: -581416507207380777
+    second: roadTextures_tilesheet@2_222
+  - first:
+      213: -5492408598641317896
+    second: roadTextures_tilesheet@2_223
+  - first:
+      213: -3275543191262001554
+    second: roadTextures_tilesheet@2_224
+  - first:
+      213: -7675404002847237745
+    second: roadTextures_tilesheet@2_225
+  - first:
+      213: -4201822424422822635
+    second: roadTextures_tilesheet@2_226
+  - first:
+      213: -9050471747263951521
+    second: roadTextures_tilesheet@2_227
+  - first:
+      213: -985415343751548325
+    second: roadTextures_tilesheet@2_228
+  - first:
+      213: -3254485546831302335
+    second: roadTextures_tilesheet@2_229
+  - first:
+      213: -8048427295470871155
+    second: roadTextures_tilesheet@2_230
+  - first:
+      213: 9099521203640048668
+    second: roadTextures_tilesheet@2_231
+  - first:
+      213: -1288680458032867575
+    second: roadTextures_tilesheet@2_232
+  - first:
+      213: -3909394823070745349
+    second: roadTextures_tilesheet@2_233
+  - first:
+      213: 4073402915007451484
+    second: roadTextures_tilesheet@2_234
+  - first:
+      213: 9100016944332284849
+    second: roadTextures_tilesheet@2_235
+  - first:
+      213: 9098974309978454099
+    second: roadTextures_tilesheet@2_236
+  - first:
+      213: -7407848337788370707
+    second: roadTextures_tilesheet@2_237
+  - first:
+      213: 8529795237524740956
+    second: roadTextures_tilesheet@2_238
+  - first:
+      213: -3027846291632146029
+    second: roadTextures_tilesheet@2_239
+  - first:
+      213: 6391933349396025337
+    second: roadTextures_tilesheet@2_240
+  - first:
+      213: -1386681771893476728
+    second: roadTextures_tilesheet@2_241
+  - first:
+      213: 2258405947086107934
+    second: roadTextures_tilesheet@2_242
+  - first:
+      213: 375969975545789178
+    second: roadTextures_tilesheet@2_243
+  - first:
+      213: 645579385828481164
+    second: roadTextures_tilesheet@2_244
+  - first:
+      213: -4741431484009482525
+    second: roadTextures_tilesheet@2_245
+  - first:
+      213: -8055239720042498013
+    second: roadTextures_tilesheet@2_246
+  - first:
+      213: -2576463489965011482
+    second: roadTextures_tilesheet@2_247
+  - first:
+      213: -4330336708929722915
+    second: roadTextures_tilesheet@2_248
+  - first:
+      213: -431972282342653190
+    second: roadTextures_tilesheet@2_249
+  - first:
+      213: 5017882128848187089
+    second: roadTextures_tilesheet@2_250
+  - first:
+      213: -3767043764743912313
+    second: roadTextures_tilesheet@2_251
+  - first:
+      213: -4141851681044610115
+    second: roadTextures_tilesheet@2_252
+  - first:
+      213: -4130246806285773017
+    second: roadTextures_tilesheet@2_253
+  - first:
+      213: -4394464512184639757
+    second: roadTextures_tilesheet@2_254
+  - first:
+      213: 7058415987751174322
+    second: roadTextures_tilesheet@2_255
+  - first:
+      213: 5526133441889073973
+    second: roadTextures_tilesheet@2_256
+  - first:
+      213: 172751974533215423
+    second: roadTextures_tilesheet@2_257
+  - first:
+      213: -6496019425130969601
+    second: roadTextures_tilesheet@2_258
+  - first:
+      213: -3821551286416514962
+    second: roadTextures_tilesheet@2_259
+  - first:
+      213: -5482027287958277414
+    second: roadTextures_tilesheet@2_260
+  - first:
+      213: 2531714601259294073
+    second: roadTextures_tilesheet@2_261
+  - first:
+      213: -3924741792112130940
+    second: roadTextures_tilesheet@2_262
+  - first:
+      213: 9127416937824924618
+    second: roadTextures_tilesheet@2_263
+  - first:
+      213: -3743454581321370510
+    second: roadTextures_tilesheet@2_264
+  - first:
+      213: 5012293221598133864
+    second: roadTextures_tilesheet@2_265
+  - first:
+      213: -7900337444640577723
+    second: roadTextures_tilesheet@2_266
+  - first:
+      213: -5585239537150101350
+    second: roadTextures_tilesheet@2_267
+  - first:
+      213: -6710304503464238347
+    second: roadTextures_tilesheet@2_268
+  - first:
+      213: 7665349059870920645
+    second: roadTextures_tilesheet@2_269
+  - first:
+      213: -4069850974307046554
+    second: roadTextures_tilesheet@2_270
+  - first:
+      213: -3507745734831459998
+    second: roadTextures_tilesheet@2_271
+  - first:
+      213: -2028537075049924099
+    second: roadTextures_tilesheet@2_272
+  - first:
+      213: 3518593754493315850
+    second: roadTextures_tilesheet@2_273
+  - first:
+      213: 8460615826342059883
+    second: roadTextures_tilesheet@2_274
+  - first:
+      213: -947204066005984468
+    second: roadTextures_tilesheet@2_275
+  - first:
+      213: 2202977541887181152
+    second: roadTextures_tilesheet@2_276
+  - first:
+      213: -351623142408914009
+    second: roadTextures_tilesheet@2_277
+  - first:
+      213: 4321702258520136387
+    second: roadTextures_tilesheet@2_278
+  - first:
+      213: -8736845363378325989
+    second: roadTextures_tilesheet@2_279
+  - first:
+      213: 1981906694320164588
+    second: roadTextures_tilesheet@2_280
+  - first:
+      213: -4862440204076720156
+    second: roadTextures_tilesheet@2_281
+  - first:
+      213: -4860066544854442929
+    second: roadTextures_tilesheet@2_282
+  - first:
+      213: -6509998012979037843
+    second: roadTextures_tilesheet@2_283
+  - first:
+      213: -7930162462949517932
+    second: roadTextures_tilesheet@2_284
+  - first:
+      213: 4894661603069362014
+    second: roadTextures_tilesheet@2_285
+  - first:
+      213: 674278123946528350
+    second: roadTextures_tilesheet@2_286
+  - first:
+      213: -7027893495373250984
+    second: roadTextures_tilesheet@2_287
+  - first:
+      213: -3102754424180238169
+    second: roadTextures_tilesheet@2_288
+  - first:
+      213: 9034949136327199712
+    second: roadTextures_tilesheet@2_289
+  - first:
+      213: -3925999525131163915
+    second: roadTextures_tilesheet@2_290
+  - first:
+      213: 3722019930291897769
+    second: roadTextures_tilesheet@2_291
+  - first:
+      213: 6389377460969425284
+    second: roadTextures_tilesheet@2_292
+  - first:
+      213: 5340653080074893310
+    second: roadTextures_tilesheet@2_293
+  - first:
+      213: -2388787868028144860
+    second: roadTextures_tilesheet@2_294
+  - first:
+      213: -3033027467678423946
+    second: roadTextures_tilesheet@2_295
+  - first:
+      213: 4323888071809009428
+    second: roadTextures_tilesheet@2_296
+  - first:
+      213: -645931863673039125
+    second: roadTextures_tilesheet@2_297
+  - first:
+      213: -4995618360939909278
+    second: roadTextures_tilesheet@2_298
+  - first:
+      213: 2662706947254848675
+    second: roadTextures_tilesheet@2_299
+  - first:
+      213: -2956102100497162654
+    second: roadTextures_tilesheet@2_300
+  - first:
+      213: -4491624232194212953
+    second: roadTextures_tilesheet@2_301
+  - first:
+      213: 5757928262937987207
+    second: roadTextures_tilesheet@2_302
+  - first:
+      213: 2840116155771751320
+    second: roadTextures_tilesheet@2_303
+  - first:
+      213: -2130362719537764141
+    second: roadTextures_tilesheet@2_304
+  - first:
+      213: -6875114231037811922
+    second: roadTextures_tilesheet@2_305
+  - first:
+      213: -8566335776877109795
+    second: roadTextures_tilesheet@2_306
+  - first:
+      213: -5632592644418578862
+    second: roadTextures_tilesheet@2_307
+  - first:
+      213: 8757469162272814528
+    second: roadTextures_tilesheet@2_308
+  - first:
+      213: -2286651725818035595
+    second: roadTextures_tilesheet@2_309
+  - first:
+      213: 4398328671618024834
+    second: roadTextures_tilesheet@2_310
+  - first:
+      213: 1403701700868009780
+    second: roadTextures_tilesheet@2_311
+  - first:
+      213: -1891768177253035428
+    second: roadTextures_tilesheet@2_312
+  - first:
+      213: 2925551335325641792
+    second: roadTextures_tilesheet@2_313
+  - first:
+      213: 8357620332192226530
+    second: roadTextures_tilesheet@2_314
+  - first:
+      213: -5729233438489160101
+    second: roadTextures_tilesheet@2_315
+  - first:
+      213: -8432128258904924767
+    second: roadTextures_tilesheet@2_316
+  - first:
+      213: 6114545003644321492
+    second: roadTextures_tilesheet@2_317
+  - first:
+      213: -1979170457688651462
+    second: roadTextures_tilesheet@2_318
+  - first:
+      213: 4378223930774547257
+    second: roadTextures_tilesheet@2_319
+  - first:
+      213: 5612994691456444913
+    second: roadTextures_tilesheet@2_320
+  - first:
+      213: 1416143203660397482
+    second: roadTextures_tilesheet@2_321
+  - first:
+      213: 3755855488282418753
+    second: roadTextures_tilesheet@2_322
+  - first:
+      213: 3918087001467313881
+    second: roadTextures_tilesheet@2_323
+  - first:
+      213: 5827332593964984924
+    second: roadTextures_tilesheet@2_324
+  - first:
+      213: -7164074635433351780
+    second: roadTextures_tilesheet@2_325
+  - first:
+      213: 7899491081052754771
+    second: roadTextures_tilesheet@2_326
+  - first:
+      213: -4117214854277168007
+    second: roadTextures_tilesheet@2_327
+  - first:
+      213: 9076267370074981737
+    second: roadTextures_tilesheet@2_328
+  - first:
+      213: 6140551383733277531
+    second: roadTextures_tilesheet@2_329
+  - first:
+      213: 5290626614813083431
+    second: roadTextures_tilesheet@2_330
+  - first:
+      213: 7535596589790603404
+    second: roadTextures_tilesheet@2_331
+  - first:
+      213: -8700883328621352528
+    second: roadTextures_tilesheet@2_332
+  - first:
+      213: 6892510744951107970
+    second: roadTextures_tilesheet@2_333
+  - first:
+      213: 8488314390813560690
+    second: roadTextures_tilesheet@2_334
+  - first:
+      213: 1092120837336837702
+    second: roadTextures_tilesheet@2_335
+  - first:
+      213: 2646276324142085061
+    second: roadTextures_tilesheet@2_336
+  - first:
+      213: -2326264264226743331
+    second: roadTextures_tilesheet@2_337
+  - first:
+      213: 3675727229517731985
+    second: roadTextures_tilesheet@2_338
+  - first:
+      213: 24975441162131144
+    second: roadTextures_tilesheet@2_339
+  - first:
+      213: 769371740616798546
+    second: roadTextures_tilesheet@2_340
+  - first:
+      213: 7554785946547341668
+    second: roadTextures_tilesheet@2_341
+  - first:
+      213: -5405991361644284573
+    second: roadTextures_tilesheet@2_342
+  - first:
+      213: -1297517519668342376
+    second: roadTextures_tilesheet@2_343
+  - first:
+      213: 3790621862067662932
+    second: roadTextures_tilesheet@2_344
+  - first:
+      213: 4415631644137759179
+    second: roadTextures_tilesheet@2_345
+  - first:
+      213: 1773639129750162033
+    second: roadTextures_tilesheet@2_346
+  - first:
+      213: 6678241661408825232
+    second: roadTextures_tilesheet@2_347
+  - first:
+      213: 4648372076408948809
+    second: roadTextures_tilesheet@2_348
+  - first:
+      213: 4910189026655149008
+    second: roadTextures_tilesheet@2_349
+  - first:
+      213: 6304112899575151184
+    second: roadTextures_tilesheet@2_350
+  - first:
+      213: 7352003562590319344
+    second: roadTextures_tilesheet@2_351
+  - first:
+      213: 759122636612010407
+    second: roadTextures_tilesheet@2_352
+  - first:
+      213: -9046691405967585145
+    second: roadTextures_tilesheet@2_353
+  - first:
+      213: 2715762004376666769
+    second: roadTextures_tilesheet@2_354
+  - first:
+      213: -842878065830730475
+    second: roadTextures_tilesheet@2_355
+  - first:
+      213: -4469974036906712850
+    second: roadTextures_tilesheet@2_356
+  - first:
+      213: 7176392166420598430
+    second: roadTextures_tilesheet@2_357
+  - first:
+      213: -5061773384541386083
+    second: roadTextures_tilesheet@2_358
+  - first:
+      213: 7405171280614731726
+    second: roadTextures_tilesheet@2_359
+  - first:
+      213: 7143412609471049169
+    second: roadTextures_tilesheet@2_360
+  - first:
+      213: 7276133092632939805
+    second: roadTextures_tilesheet@2_361
+  - first:
+      213: 8990626991405984694
+    second: roadTextures_tilesheet@2_362
+  - first:
+      213: -223682454383101760
+    second: roadTextures_tilesheet@2_363
+  - first:
+      213: -6235111746099753354
+    second: roadTextures_tilesheet@2_364
+  - first:
+      213: 4645343986162977091
+    second: roadTextures_tilesheet@2_365
+  - first:
+      213: -7772385277981320361
+    second: roadTextures_tilesheet@2_366
+  - first:
+      213: 1632500867975621858
+    second: roadTextures_tilesheet@2_367
+  - first:
+      213: 7024758634639970034
+    second: roadTextures_tilesheet@2_368
+  - first:
+      213: 221858791513874929
+    second: roadTextures_tilesheet@2_369
+  - first:
+      213: 4704686124754285214
+    second: roadTextures_tilesheet@2_370
+  - first:
+      213: 6697398183980390540
+    second: roadTextures_tilesheet@2_371
+  - first:
+      213: 2041662932719543078
+    second: roadTextures_tilesheet@2_372
+  - first:
+      213: -7595204237806427593
+    second: roadTextures_tilesheet@2_373
+  - first:
+      213: 8454059576326798081
+    second: roadTextures_tilesheet@2_374
+  - first:
+      213: 1631199089096665983
+    second: roadTextures_tilesheet@2_375
+  - first:
+      213: -2851498198353282530
+    second: roadTextures_tilesheet@2_376
+  - first:
+      213: 8591808596626034605
+    second: roadTextures_tilesheet@2_377
+  - first:
+      213: 603271804434594148
+    second: roadTextures_tilesheet@2_378
+  - first:
+      213: -9061255307790315866
+    second: roadTextures_tilesheet@2_379
+  - first:
+      213: -296456512276633930
+    second: roadTextures_tilesheet@2_380
+  - first:
+      213: 5629001202826698762
+    second: roadTextures_tilesheet@2_381
+  - first:
+      213: -7031580856807536277
+    second: roadTextures_tilesheet@2_382
+  - first:
+      213: -4157497523907692123
+    second: roadTextures_tilesheet@2_383
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15010c60b87124640800000000000000
+      internalID: 5062634816999002193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5551411a963654570800000000000000
+      internalID: 8450269581155767637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa04f685025bdd750800000000000000
+      internalID: 6331415801680052399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f2b929e54e94810800000000000000
+      internalID: 1750181025047850778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afbf9ffe2af4b070800000000000000
+      internalID: 8121391107819945891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9b2429856d71760800000000000000
+      internalID: 7428641786270235100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10222cacc1515ddc0800000000000000
+      internalID: -3614959912489967103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b2ee6a4c00de970800000000000000
+      internalID: 8785679292683922210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6a008f1c51adc60800000000000000
+      internalID: 7843605623852803760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0265ae707b435f110800000000000000
+      internalID: 1293998428655343136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d2687807900efc0800000000000000
+      internalID: -3467761334160577221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4827315171d23ad0800000000000000
+      internalID: -2723884539981649845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb11d9b020527260800000000000000
+      internalID: 7093820464548617158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e1cb5b24cfea690800000000000000
+      internalID: -7588850958625661357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0ea0b2e3f75edf0800000000000000
+      internalID: -151575107460210480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c19c3b7265228d0800000000000000
+      internalID: -2872638883788940169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f276266a8b4ac69d0800000000000000
+      internalID: -2779665757022034129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a26c80902d9cd90800000000000000
+      internalID: -7076894403192280454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873b6fc7fa325d670800000000000000
+      internalID: 8562789503137657720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523dc9a8221a93360800000000000000
+      internalID: 7149923053153866533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318faed3cbb7b6cb0800000000000000
+      internalID: -4869662523648182253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f64c8372f70ef5f0800000000000000
+      internalID: -721130152430647561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12b02bfcedf6fe10800000000000000
+      internalID: 2231249859675992607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0ac0aa5a29f29b0800000000000000
+      internalID: -5102698612567269174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1881dd128bf115fb0800000000000000
+      internalID: -4660909263649171327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736c35eff17cda160800000000000000
+      internalID: 7038500732874769975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000c72ad80cd5900800000000000000
+      internalID: 674907233724399624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c342f3692b1d99130800000000000000
+      internalID: 3574118344250303548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_28
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13279d9aaa5fd450800000000000000
+      internalID: 6115706507827290911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e4b192b566a22b0800000000000000
+      internalID: -5608557844218818945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89067f6479e07bfe0800000000000000
+      internalID: -1173453135013257064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e0937cf0c8a5040800000000000000
+      internalID: 4637172765726150270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a2cd6b34ce9f7f0800000000000000
+      internalID: -578171301565552031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49d007a3ce06cc60800000000000000
+      internalID: 7837968434968189260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c3df3f83febfed0800000000000000
+      internalID: -2379044950244508561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_35
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569935b8fc262ab40800000000000000
+      internalID: 5450027142606985573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd031755dbd00b3f0800000000000000
+      internalID: -887194019758526244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f7301b94707a790800000000000000
+      internalID: -7519033039787950299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f371eca64de096e30800000000000000
+      internalID: 4497142008393897791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b41b669198fbd0f0800000000000000
+      internalID: -1091005180529666889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d35274456f18760800000000000000
+      internalID: 7458513299733560619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e469346c609051590800000000000000
+      internalID: -7704241662846593458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044e487dcc01f5300800000000000000
+      internalID: 242931376876479552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ea9235c381b4480800000000000000
+      internalID: -8914004390077419895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86aff0516372faa30800000000000000
+      internalID: 4228641688359271016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7046fb6a417b93a0800000000000000
+      internalID: -6657603059684327301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b505d276f6e96f4c0800000000000000
+      internalID: -4254038596695273381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010097e0296ebc630800000000000000
+      internalID: 3948503013302796304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ad5503f490d4da0800000000000000
+      internalID: -5959096496223298920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51199f60b20936590800000000000000
+      internalID: -7682138024888921835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51889a31b1d8ed330800000000000000
+      internalID: 3737579888197601301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31818f67779d2ed20800000000000000
+      internalID: 3306444183563671571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4743f86fa5db875e0800000000000000
+      internalID: -1911569843437489036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_53
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e80c713633cdb4f0800000000000000
+      internalID: -811277720330958624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482eb2f47be305150800000000000000
+      internalID: 5859252072237228676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_55
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856e5a08a5c44eea0800000000000000
+      internalID: -5844462464830937512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1691056a59913f1d0800000000000000
+      internalID: -3318280369910834847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd7ee44dbf9fd920800000000000000
+      internalID: 3017305910615637441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164387ae8fbe06bb0800000000000000
+      internalID: -4944692936534641567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_59
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f91016600c119b0800000000000000
+      internalID: -5111092968458969271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3560c203da01eb660800000000000000
+      internalID: 7403373173467252307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480d7d5111e477cf0800000000000000
+      internalID: -254649018635267964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72073a5d966a440e0800000000000000
+      internalID: -2286519737311334361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0c7079cd2a55cb0800000000000000
+      internalID: -4875811953248321315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1bc561b95c24960800000000000000
+      internalID: 7584841992331112936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c5713187a62cba0800000000000000
+      internalID: -6070172283793089474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e98e89fedd1df90800000000000000
+      internalID: -6930514330414178703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284db60d5de16c1e0800000000000000
+      internalID: -2178019466113461118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abc75dcf9687e280800000000000000
+      internalID: -9014088108255753310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47522393630742ab0800000000000000
+      internalID: -5033775105303239308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae97f5562d6ad390800000000000000
+      internalID: -7792796193792745820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed581d991236db500800000000000000
+      internalID: 413595736753669598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a4b8c0e16155b40800000000000000
+      internalID: 5428269244180286082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927b629c120c2ae40800000000000000
+      internalID: 5666302532526716713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac08fed21eb7c5b0800000000000000
+      internalID: -5348097044219687773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b81e3b12b76b66c0800000000000000
+      internalID: -4149108617032886089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39aa914e561b4e10800000000000000
+      internalID: 2182863038474529084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eb1f5b455b30c40800000000000000
+      internalID: 5477420947247054478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2e7b3f20c237d90800000000000000
+      internalID: -7101283796242668890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca7756ce59ff04d0800000000000000
+      internalID: -3166037827568305467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67221cf9c82860c0800000000000000
+      internalID: -4582367772866893974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8267202d24d3f9420800000000000000
+      internalID: 2638895263862912552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1921c738751829420800000000000000
+      internalID: 2635310944833245841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342335daca038bdc0800000000000000
+      internalID: -3623092382019145149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e5552b91d0cf470800000000000000
+      internalID: 8429627006548008476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7547ec3141fe9a7d0800000000000000
+      internalID: -2906529214980262825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd87af2f9560a090800000000000000
+      internalID: -8025302801600508417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471058a2221c835e0800000000000000
+      internalID: -1929580087841848972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbadddfb70967c9f0800000000000000
+      internalID: -448274155895399747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_89
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd515a7324a10c00800000000000000
+      internalID: 865153075714809278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e7dd1d22d6c9300800000000000000
+      internalID: 260202874797915787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef52f209aff4febd0800000000000000
+      internalID: -2598770522390059522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_92
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e771b7281cf88bd90800000000000000
+      internalID: -7081752352759539842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_93
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45219fc472a1548f0800000000000000
+      internalID: -557010222812949932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_94
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e2b360b82634c0800000000000000
+      internalID: -4308211255481276578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roadTextures_tilesheet@2_95
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5370850576168d140800000000000000
+      internalID: 4744649303792289589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
