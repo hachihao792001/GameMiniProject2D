@@ -10,4 +10,5 @@ public class Player : MonoBehaviour
     public PlayerHealth PlayerHealth;
     public PlayerXP PlayerXP;
     public PlayerSkill PlayerSkill;
+    public PlayerHelper PlayerHelper;
 }

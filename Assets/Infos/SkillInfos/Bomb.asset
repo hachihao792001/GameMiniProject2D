@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe96003d1d77da643aaf29d3616c08a6, type: 3}
   m_Name: Bomb
   m_EditorClassIdentifier: 
-  type: 1
+  type: 2
   name: Bomb
   levelDescriptions:
   - Explosion deal area damage

@@ -4,30 +4,42 @@ using UnityEngine;
 
 public enum SkillType
 {
-    Boomerang,
-    Bomb,
-    Ball,
-    IncreaseDamage,
-    IncreaseMaxHealth,
-    IncreaseMoveSpeed,
-    IncreaseDefense,
-    IncreaseAttractXPRange,
-    IncreaseAttackRange
+    None = 0,
+
+    Boomerang = 1,
+    Bomb = 2,
+    Ball = 3,
+
+    IncreaseDamage = 101,
+    IncreaseMaxHealth = 102,
+    IncreaseMoveSpeed = 103,
+    IncreaseDefense = 104,
+    IncreaseAttractXPRange = 105,
+    IncreaseAttackRange = 106,
+
+    Sword = 201,
+    ForceField = 202
 }
 
 public enum SkillUpgradeActionType
 {
     None,
-    UnlockBullet,
-    IncreaseBulletDamage,
-    IncreaseBulletAffectArea,
-    ShootAnotherBulletOpposite,
-    IncreaseOverallDamage,
-    IncreaseMaxHealth,
-    IncreaseMoveSpeed,
-    IncreaseDefense,
-    IncreaseAttractXPRange,
-    IncreaseAttackRange
+
+    UnlockBullet = 1,
+    IncreaseBulletDamage = 2,
+    IncreaseBulletAffectArea = 3,
+    ShootAnotherBulletOpposite = 4,
+
+    IncreaseOverallDamage = 101,
+    IncreaseMaxHealth = 102,
+    IncreaseMoveSpeed = 103,
+    IncreaseDefense = 104,
+    IncreaseAttractXPRange = 105,
+    IncreaseAttackRange = 106,
+
+    IncreaseHelperDamage = 201,
+    IncreaseHelperAmount = 202,
+    IncreaseHelperRange = 203
 }
 
 [System.Serializable]

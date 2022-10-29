@@ -19,7 +19,7 @@ public class PopupChooseSkillController : MonoBehaviour
 
         gameObject.SetActive(true);
         List<SkillType> notMaxSkillTypes = Utils.GetListEnum<SkillType>().FindAll(
-            skill => !playerSkill.skillLevels.ContainsKey(skill) || playerSkill.skillLevels[skill] < 3);
+            skill => skill != SkillType.None && (!playerSkill.skillLevels.ContainsKey(skill) || playerSkill.skillLevels[skill] < 3));
 
         List<SkillType> _3RandomSkills = Utils.GetNRandomElements(notMaxSkillTypes, 3);
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe96003d1d77da643aaf29d3616c08a6, type: 3}
   m_Name: IncreaseMaxHealth
   m_EditorClassIdentifier: 
-  type: 4
+  type: 102
   name: Max health++
   levelDescriptions:
   - Max health +10

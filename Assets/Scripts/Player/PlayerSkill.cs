@@ -46,26 +46,44 @@ public class PlayerSkill : MonoBehaviour
                     break;
             }
         }
+        else if (GameInformation.Instance.IsHelperSkill(skillType))
+        {
+            HelperType helperType = GameInformation.Instance.SkillTypeToHelper(skillType);
+            player.PlayerHelper.UnlockHelper(helperType);
+
+            switch (upgradeAction.type)
+            {
+                case SkillUpgradeActionType.IncreaseHelperDamage:
+                    player.PlayerHelper.AddHelperBonusDamage(helperType, upgradeActionValue);
+                    break;
+                case SkillUpgradeActionType.IncreaseHelperAmount:
+                    player.PlayerHelper.SwordHelperAddOneMoreSword();
+                    break;
+                case SkillUpgradeActionType.IncreaseHelperRange:
+                    player.PlayerHelper.ForceFieldIncreaseRange();
+                    break;
+            }
+        }
         else
         {
-            switch (skillType)
+            switch (upgradeAction.type)
             {
-                case SkillType.IncreaseAttackRange:
+                case SkillUpgradeActionType.IncreaseAttackRange:
                     player.PlayerAttacking.DetectEnemy.IncreaseRange(upgradeActionValue);
                     break;
-                case SkillType.IncreaseDamage:
+                case SkillUpgradeActionType.IncreaseOverallDamage:
                     player.PlayerAttacking.AddOverallBonusDamage((int)upgradeActionValue);
                     break;
-                case SkillType.IncreaseAttractXPRange:
+                case SkillUpgradeActionType.IncreaseAttractXPRange:
                     player.PlayerXP.DetectXP.IncreaseRange(upgradeActionValue);
                     break;
-                case SkillType.IncreaseDefense:
+                case SkillUpgradeActionType.IncreaseDefense:
                     player.PlayerHealth.IncreaseDefense(upgradeActionValue);
                     break;
-                case SkillType.IncreaseMaxHealth:
+                case SkillUpgradeActionType.IncreaseMaxHealth:
                     player.PlayerHealth.IncreaseMaxHealth(upgradeActionValue);
                     break;
-                case SkillType.IncreaseMoveSpeed:
+                case SkillUpgradeActionType.IncreaseMoveSpeed:
                     player.PlayerMoving.AddBonusSpeed(upgradeActionValue);
                     break;
             }

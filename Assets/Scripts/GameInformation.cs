@@ -10,9 +10,7 @@ public class GameInformation : MonoSingleton<GameInformation>
 
     public bool IsBulletSkill(SkillType skill)
     {
-        return skill == SkillType.Boomerang ||
-                skill == SkillType.Ball ||
-                skill == SkillType.Bomb;
+        return skill != SkillType.None && (int)skill < 101;
     }
 
     public BulletType SkillTypeToBullet(SkillType skill)
@@ -27,6 +25,24 @@ public class GameInformation : MonoSingleton<GameInformation>
                 return BulletType.Ball;
             default:
                 return BulletType.None;
+        }
+    }
+
+    public bool IsHelperSkill(SkillType skill)
+    {
+        return (int)skill >= 201;
+    }
+
+    public HelperType SkillTypeToHelper(SkillType skill)
+    {
+        switch (skill)
+        {
+            case SkillType.Sword:
+                return HelperType.Sword;
+            case SkillType.ForceField:
+                return HelperType.ForceField;
+            default:
+                return HelperType.None;
         }
     }
 }

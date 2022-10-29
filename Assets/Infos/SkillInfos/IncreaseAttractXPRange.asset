@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe96003d1d77da643aaf29d3616c08a6, type: 3}
   m_Name: IncreaseAttractXPRange
   m_EditorClassIdentifier: 
-  type: 7
+  type: 105
   name: Attract XP++
   levelDescriptions:
   - Attract XP Range +1
