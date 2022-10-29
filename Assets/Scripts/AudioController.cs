@@ -29,8 +29,9 @@ public class AudioController : MonoSingleton<AudioController>
 {
     public List<AudioInfo> AudioInfos;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         for (int i = 0; i < AudioInfos.Count; i++)
         {
             AudioInfos[i].audioSrc = gameObject.AddComponent<AudioSource>();

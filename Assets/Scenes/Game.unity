@@ -654,8 +654,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98069df8287edf74eb6a422a768f4d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mapPiecePrefab: {fileID: 558973481713972898, guid: 221d1eb235783fa4eba3ead8da1a7851, type: 3}
-  _mapPieceSize: 9.216
+  _stageMapPiecePrefabs:
+  - stage: 0
+    prefab: {fileID: 558973481713972898, guid: 221d1eb235783fa4eba3ead8da1a7851, type: 3}
+    mapPieceSize: 9.216
+  - stage: 1
+    prefab: {fileID: 5601560564146627791, guid: 72bbe2c04f85a5f4eb061fdf8d49fd71, type: 3}
+    mapPieceSize: 6.38
 --- !u!1 &558015741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +1969,7 @@ MonoBehaviour:
   XPPrefab: {fileID: 3545722777209334184, guid: 714453b456cd27a4b9d98eab536e883c, type: 3}
   DamageTextController: {fileID: 728485852}
   PopupChooseSkillController: {fileID: 4204492355281631974}
+  currentStage: 0
 --- !u!4 &1776279757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 403833472811851213, guid: 65a1bf7f7b1325344a5e7f564ee712f3, type: 3}

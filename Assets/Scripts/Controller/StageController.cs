@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public enum Stage
 {
-    DeathCity,
-    CloudyPark,
-    StampedeWorld
+    DeathCity = 0,
+    CloudyPark = 1,
+    StampedeWorld = 2
 }
 
 
