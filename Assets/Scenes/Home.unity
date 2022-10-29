@@ -11926,8 +11926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249, y: -461}
-  m_SizeDelta: {x: 520.8897, y: 187.84433}
+  m_AnchoredPosition: {x: -249, y: -457.68}
+  m_SizeDelta: {x: 520.89, y: 181.21}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &6024664579080857914
 GameObject:
@@ -12072,7 +12072,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cloudy Beach
+  m_text: Cloudy Park
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c5ee151f9307453bad78be36b51a077, type: 2}
   m_sharedMaterial: {fileID: 2517202264660172603, guid: 5c5ee151f9307453bad78be36b51a077, type: 2}
