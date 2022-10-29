@@ -4,12 +4,25 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] Enemy[] enemyPrefabs;
+    [SerializeField] List<Enemy> enemyPrefabs;
 
     [SerializeField] float nearX, farX, nearY, farY;
     [SerializeField] float minDelay, maxDelay;
     float tick = 0;
     float currentDelay = 0;
+
+    [SerializeField] float _delayDecreaseRate;
+
+    private void Awake()
+    {
+        GameController.Instance.onPlayerLevelUp += OnPlayerLevelUp;
+    }
+
+    private void OnPlayerLevelUp()
+    {
+        minDelay -= _delayDecreaseRate;
+        maxDelay -= _delayDecreaseRate;
+    }
 
     private void Start()
     {
@@ -29,8 +42,8 @@ public class EnemySpawner : MonoBehaviour
             newEnemyPos.y = GameController.Instance.Player.transform.position.y + (top ? 1 : -1) * Random.Range(nearY, farY);
             newEnemyPos.x = GameController.Instance.Player.transform.position.x + (right ? 1 : -1) * Random.Range(nearX, farX);
 
-            int newEnemyTypeIndex = Random.Range(0, enemyPrefabs.Length);
-            Instantiate(enemyPrefabs[newEnemyTypeIndex], newEnemyPos, Quaternion.identity);
+            EnemyType newEnemyType = GetRandomEnemy();
+            Instantiate(enemyPrefabs.Find(x => x.enemyType == newEnemyType), newEnemyPos, Quaternion.identity);
 
             GetNewDelay();
             tick = 0;
@@ -40,5 +53,22 @@ public class EnemySpawner : MonoBehaviour
     void GetNewDelay()
     {
         currentDelay = Random.Range(minDelay, maxDelay);
+    }
+    public EnemyType GetRandomEnemy()
+    {
+        StageSpawningInfo stageSpawningInfo = GameInformation.Instance.stageSpawningInfos[(int)GameController.Instance.currentStage];
+        List<EnemySpawningInfo> spawnableEnemies = stageSpawningInfo.GetSpawnableEnemies(GameController.Instance.Player.PlayerXP.currentLevel);
+        int sumWeight = stageSpawningInfo.CalculateSumWeight(spawnableEnemies);
+        int[] weightSumArray = stageSpawningInfo.CalculateWeightSumArray(spawnableEnemies);
+
+        int random = Random.Range(1, sumWeight + 1);
+        for (int i = 0; i < weightSumArray.Length; i++)
+        {
+            if (random <= weightSumArray[i])
+            {
+                return spawnableEnemies[i].enemyType;
+            }
+        }
+        return EnemyType.None;
     }
 }

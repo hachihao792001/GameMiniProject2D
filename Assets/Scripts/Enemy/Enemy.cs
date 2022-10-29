@@ -2,8 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyType
+{
+    None = 0,
+    MeleeEnemy,
+    RangedEnemy,
+    BigRangedEnemy
+}
+
 public class Enemy : MonoBehaviour
 {
+    public EnemyType enemyType;
     protected Player player;
 
     public float TotalHealth;

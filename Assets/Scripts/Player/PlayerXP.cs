@@ -33,6 +33,8 @@ public class PlayerXP : MonoBehaviour
             {
                 GameController.Instance.PopupChooseSkillController.Show();
 
+                GameController.Instance.onPlayerLevelUp?.Invoke();
+
                 XP = 0;
                 _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
                 currentLevel++;

@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83308a276b9a7249bd7d8d34452c492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 3
   TotalHealth: 30
   CurrentHealth: 0
   _speed: 0.8

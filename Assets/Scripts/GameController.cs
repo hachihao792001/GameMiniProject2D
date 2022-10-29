@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +18,8 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public PopupChooseSkillController PopupChooseSkillController;
 
     public Stage currentStage;
+
+    public Action onPlayerLevelUp;
 
     protected override void Awake()
     {
