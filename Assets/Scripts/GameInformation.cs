@@ -9,7 +9,6 @@ public class GameInformation : MonoSingleton<GameInformation>
     public List<StageSpawningInfo> stageSpawningInfos;
 
     public int[] levelXPs;
-
     public bool IsBulletSkill(SkillType skill)
     {
         return skill != SkillType.None && (int)skill < 101;

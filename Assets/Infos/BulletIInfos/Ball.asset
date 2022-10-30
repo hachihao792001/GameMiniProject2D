@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ball
   m_EditorClassIdentifier: 
   type: 4
-  shootInterval: 3
+  shootInterval: 5
   damage: 8
   prefab: {fileID: -3743831002795229546, guid: bc2146405925f344a9de285c4c1ff4dd, type: 3}

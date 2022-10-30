@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
 
     public float FullHealth = 100;
     public float currentHealth;
+    public GameObject LoosePanel;
 
     float _defense = 0;
 
@@ -59,9 +60,10 @@ public class PlayerHealth : MonoBehaviour
             GameController.Instance.DamageTextController.SpawnNewText(transform.position, h);
             AudioController.Instance.PlayRandomPlayerHurt();
 
-            if (currentHealth == 0)
+            if (currentHealth <= 0)
             {
-                //Lose
+                LoosePanel.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }

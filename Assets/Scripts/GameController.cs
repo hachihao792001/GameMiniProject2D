@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public struct XPSprite
@@ -44,5 +45,13 @@ public class GameController : OneSceneMonoSingleton<GameController>
     {
         RainEffect.SetActive(currentStage == Stage.CloudyPark);
         DarkSky.SetActive(currentStage == Stage.CloudyPark);
+    }
+
+    public void NextStage()
+    {
+        currentStage++;
+        PlayerPrefs.SetInt("stage", (int)currentStage);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

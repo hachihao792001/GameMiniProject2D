@@ -12,6 +12,7 @@ public class PlayerXP : MonoBehaviour
     [SerializeField] Text _levelText;
 
     public DetectXP DetectXP;
+    public GameObject WinPanel;
 
     private void Start()
     {
@@ -31,13 +32,19 @@ public class PlayerXP : MonoBehaviour
 
             if (XP >= GameInformation.Instance.levelXPs[currentLevel - 1])
             {
-                GameController.Instance.PopupChooseSkillController.Show();
+                if (currentLevel < GameInformation.Instance.levelXPs.Length)
+                    GameController.Instance.PopupChooseSkillController.Show();
 
                 GameController.Instance.onPlayerLevelUp?.Invoke();
 
                 XP = 0;
                 _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
                 currentLevel++;
+                if (currentLevel >= GameInformation.Instance.levelXPs.Length)
+                {
+                    WinPanel.SetActive(true);
+                    Time.timeScale = 0;
+                }
                 _levelText.text = currentLevel.ToString();
             }
         }
