@@ -642,10 +642,10 @@ RectTransform:
   m_Father: {fileID: 1993819475}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 462}
-  m_SizeDelta: {x: 835.25, y: 835.25}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -602.51}
+  m_SizeDelta: {x: -244.75, y: 1205.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290102973
 MonoBehaviour:
@@ -669,7 +669,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 441a15d101b03f14d81b53d389907852, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -698,6 +698,7 @@ GameObject:
   - component: {fileID: 1993819473}
   - component: {fileID: 1993819472}
   - component: {fileID: 1993819476}
+  - component: {fileID: 1993819477}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -734,12 +735,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -800,3 +801,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6944f8de5b7feb4ab993476c8ffb2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1993819477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993819471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1329478f6c3ff4f9d3844c10365527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashScreen: {fileID: 541902679}

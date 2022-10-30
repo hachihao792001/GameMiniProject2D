@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [Serializable]
 public struct XPSprite
@@ -34,6 +35,9 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public Stage currentStage;
 
     public Action onPlayerLevelUp;
+    public Button PauseButton;
+    public Button ResumeButton;
+    public bool IsPause = false;
 
     protected override void Awake()
     {
@@ -45,6 +49,15 @@ public class GameController : OneSceneMonoSingleton<GameController>
     {
         RainEffect.SetActive(currentStage == Stage.CloudyPark);
         DarkSky.SetActive(currentStage == Stage.CloudyPark);
+        float ratio = (float)Screen.width / Screen.height;
+        if (ratio > 1.5f)
+        {
+            MainCamera.orthographicSize = 2.5f;
+        }
+        else
+        {
+            MainCamera.orthographicSize = 5f;
+        }
     }
 
     public void NextStage()
@@ -53,5 +66,20 @@ public class GameController : OneSceneMonoSingleton<GameController>
         PlayerPrefs.SetInt("stage", (int)currentStage);
         PlayerPrefs.Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!IsPause)
+            {
+                PauseButton.onClick.Invoke();
+            }
+            else
+            {
+                ResumeButton.onClick.Invoke();
+            }
+        }
     }
 }

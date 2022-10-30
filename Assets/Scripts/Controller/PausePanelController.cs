@@ -7,6 +7,7 @@ public class PausePanelController : MonoBehaviour
 {
     public void Show()
     {
+        GameController.Instance.IsPause = true;
         gameObject.SetActive(true);
         Time.timeScale = 0;
     }
@@ -18,6 +19,7 @@ public class PausePanelController : MonoBehaviour
 
     public void ResumeClick()
     {
+        GameController.Instance.IsPause = false;
         gameObject.SetActive(false);
         Time.timeScale = 1;
     }
