@@ -25,7 +25,7 @@ public class ScrollStage : MonoBehaviour
 
     void Update()
     {
-        if (stageList.anchoredPosition != targetAnchoredPosition)
+        if (Mathf.Abs(stageList.anchoredPosition.x - targetAnchoredPosition.x) > 0.1f)
         {
             stageList.anchoredPosition = Vector3.Lerp(stageList.anchoredPosition, targetAnchoredPosition, Time.deltaTime * 10f);
         }

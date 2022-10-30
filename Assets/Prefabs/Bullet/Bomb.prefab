@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.4
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4983,7 +4983,7 @@ MonoBehaviour:
   myInfo: {fileID: 0}
   rb: {fileID: 2305399248917506165}
   _sr: {fileID: 5121623968690120960}
-  _explosionRadius: 1.5
+  _explosionRadius: 1
   _speed: 2
   _timeUntilExplode: 1
   _timeToDisappearAfterExplode: 1
