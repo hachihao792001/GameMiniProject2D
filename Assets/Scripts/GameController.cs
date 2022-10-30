@@ -25,6 +25,8 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public DamageTextController DamageTextController;
     public PopupChooseSkillController PopupChooseSkillController;
 
+    public GameObject RainEffect;
+
     public List<XPSprite> xpSprites;
 
     public Stage currentStage;
@@ -35,5 +37,10 @@ public class GameController : OneSceneMonoSingleton<GameController>
     {
         base.Awake();
         currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
+    }
+
+    private void Start()
+    {
+        RainEffect.SetActive(currentStage == Stage.CloudyPark);
     }
 }

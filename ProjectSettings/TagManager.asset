@@ -49,3 +49,6 @@ TagManager:
   - name: Entity
     uniqueID: 3235850121
     locked: 0
+  - name: Weather
+    uniqueID: 2800371965
+    locked: 0
