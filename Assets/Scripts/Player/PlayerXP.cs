@@ -40,7 +40,7 @@ public class PlayerXP : MonoBehaviour
                 XP = 0;
                 _xpBar.value = (float)XP / GameInformation.Instance.levelXPs[currentLevel - 1];
                 currentLevel++;
-                if (currentLevel >= GameInformation.Instance.levelXPs.Length)
+                if (currentLevel > GameInformation.Instance.levelXPs.Length)
                 {
                     WinPanel.SetActive(true);
                     Time.timeScale = 0;
