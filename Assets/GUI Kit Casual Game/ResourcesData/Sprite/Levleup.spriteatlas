@@ -52,13 +52,13 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 4ee91d319886c4e4b8a4155b88bc8e7f, type: 3}
   - {fileID: 21300000, guid: 374b27a2910264ed687913a0b183b671, type: 3}
+  - {fileID: 21300000, guid: 814b4aa41e2949146813b5f12efbdddd, type: 3}
   - {fileID: 21300000, guid: 7394c696afd894eedab49dffbe39fe12, type: 3}
   - {fileID: 21300000, guid: 256e8e07b33b64c67a606d789392dfb9, type: 3}
   - {fileID: 21300000, guid: c7df0077472b54098a5029ded3824e7b, type: 3}
   - {fileID: 21300000, guid: 56a2ee4992e5e4554b190dd0dd9bd344, type: 3}
   - {fileID: 21300000, guid: 930be6895e7a6423991ffdad39ff26dd, type: 3}
   - {fileID: 21300000, guid: a4e6a5e9f9a174db48193573b4caf796, type: 3}
-  - {fileID: 21300000, guid: adcdedea2bfc24fe687e09dd817fe6a0, type: 3}
   - {fileID: 21300000, guid: 463642ab7f1eb46c386b8b2d51c40742, type: 3}
   - {fileID: 21300000, guid: 1c5268bbae239446b99b311ac8f84ea0, type: 3}
   - {fileID: 21300000, guid: 7e1795fbe483c4a6993e5922fc965f6c, type: 3}
@@ -67,13 +67,13 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - levelup_bg_glow 1
   - levelup_paticle_circle
+  - levelup_paticle_circle
   - levelup_effect_rotate_white
   - bg_bottom_deco
   - levelup_icon_highlight
   - levelup_bg_glow
   - bg_bottom_deco
   - levelup_effect_white
-  - levelup_paticle_circle
   - levelup_paticle_white
   - level_icon
   - levelup_effect_circle_white

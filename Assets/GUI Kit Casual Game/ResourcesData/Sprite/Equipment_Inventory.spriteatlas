@@ -53,6 +53,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e999f11042cd241a38ff7e27c7803480, type: 3}
   - {fileID: 21300000, guid: ccca3a10c39d04c6c9a0e6a35e048bbb, type: 3}
   - {fileID: 21300000, guid: 8820f2404b85e4c059bb1aff048a3309, type: 3}
+  - {fileID: 21300000, guid: 6a710d4099e4cae4ca45b312cd2474b4, type: 3}
   - {fileID: 21300000, guid: 7f5077902f34e4dcda6e69df4ced83a7, type: 3}
   - {fileID: 21300000, guid: 768bd451ab2124c98924895f104d3dce, type: 3}
   - {fileID: 21300000, guid: 7b6bed5126b974c5e8a38140a3812d06, type: 3}
@@ -90,8 +91,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 35d7e6588f1f34db1b9a5e62f4efdf77, type: 3}
   - {fileID: 21300000, guid: a9d4037850bca4a68b07520beb81e80a, type: 3}
   - {fileID: 21300000, guid: 345db1a8012e546ceb65d22bfb226cdf, type: 3}
+  - {fileID: 21300000, guid: 670c46b85c167f64e8ab61daf2007a50, type: 3}
   - {fileID: 21300000, guid: 15f649e8f23314a72a516901b7f4403a, type: 3}
-  - {fileID: 21300000, guid: 180dd459b1f2e41e7b1c59cbb67e45bb, type: 3}
   - {fileID: 21300000, guid: b72cef693a9c5490b89da90e2b65005e, type: 3}
   - {fileID: 21300000, guid: 8aab0f8961b0147e495a46b3bb275442, type: 3}
   - {fileID: 21300000, guid: 84063999b9e1741d099c1d8f7bbc0f7a, type: 3}
@@ -101,7 +102,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 35ac832b69b35457cb25a7f05c8fdead, type: 3}
   - {fileID: 21300000, guid: 5908892b8c8314bba9b29d850192f786, type: 3}
   - {fileID: 21300000, guid: 4e1e4e7bc1e404ba49f38d90db688820, type: 3}
-  - {fileID: 21300000, guid: 79be0ebb2700b48e7a8792238a8934ef, type: 3}
   - {fileID: 21300000, guid: a22e4b6c4fe9242aea74ea03dc066589, type: 3}
   - {fileID: 21300000, guid: 5fa91b7cb446d449883d9c1282420086, type: 3}
   - {fileID: 21300000, guid: b213389c9bb63435aab4034a8763405d, type: 3}
@@ -118,6 +118,7 @@ SpriteAtlas:
   - equipicon_sample_bomb
   - equip_frame
   - equipment_detail_icon_hp
+  - equipicon_sample_bolt
   - equipicon_sample_boxing_gloves
   - equipicon_sample_clover
   - inventory_detail_info_bg
@@ -155,8 +156,8 @@ SpriteAtlas:
   - equipment_frame_blue
   - inventory_detail_info_shadow
   - equipment_detail_icon_defense
+  - equip_frame_lock
   - equipment_lock_icon
-  - equipicon_sample_bolt
   - equipment_tab_icon_1_n
   - equipment_tab_icon_0_n
   - equipment_frame_yellow
@@ -166,7 +167,6 @@ SpriteAtlas:
   - equipment_equip_icon
   - inventory_info_bg
   - equipicon_sample_shovel
-  - equip_frame_lock
   - equipicon_sample_star_red
   - equipicon_sample_nut
   - equip_count_bg
