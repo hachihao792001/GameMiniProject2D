@@ -115,6 +115,7 @@ MonoBehaviour:
   enemyType: 3
   TotalHealth: 30
   CurrentHealth: 0
+  xp: 4
   _speed: 0.8
   _meleeDamage: 5
   _flashingRed: {fileID: 6764927495934353780}

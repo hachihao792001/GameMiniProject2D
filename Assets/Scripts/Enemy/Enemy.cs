@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public float TotalHealth;
     public float CurrentHealth;
 
+    public int xp;
+
     [SerializeField] protected float _speed;
     [SerializeField] protected float _meleeDamage;
 
@@ -44,7 +46,8 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
+        XP newXP = Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
+        newXP.Init(xp);
         Destroy(gameObject);
     }
 }

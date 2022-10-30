@@ -2,6 +2,13 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
+public struct XPSprite
+{
+    public int amount;
+    public Sprite sprite;
+}
+
 public class GameController : OneSceneMonoSingleton<GameController>
 {
     public const string PLAYER_TAG = "Player";
@@ -14,9 +21,11 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public Camera MainCamera;
     public Transform Canvas;
     public Player Player;
-    public GameObject XPPrefab;
+    public XP XPPrefab;
     public DamageTextController DamageTextController;
     public PopupChooseSkillController PopupChooseSkillController;
+
+    public List<XPSprite> xpSprites;
 
     public Stage currentStage;
 
