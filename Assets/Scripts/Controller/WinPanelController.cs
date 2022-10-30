@@ -12,7 +12,7 @@ public class WinPanelController : MonoBehaviour
     private void OnEnable()
     {
         currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
-        nextStageButton.interactable = currentStage != Stage.CloudyPark;
+        nextStageButton.interactable = currentStage != Stage.StampedeWorld;
     }
 
     public void HomeClick()
