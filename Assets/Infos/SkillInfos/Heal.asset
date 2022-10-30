@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Heal
   m_EditorClassIdentifier: 
   type: 301
-  name: Heal
+  skillName: Heal
   levelDescriptions:
   - Health +20
   upgradeActions:

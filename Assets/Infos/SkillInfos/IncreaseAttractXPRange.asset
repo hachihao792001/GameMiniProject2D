@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseAttractXPRange
   m_EditorClassIdentifier: 
   type: 105
-  name: Attract XP++
+  skillName: Attract XP range ++
   levelDescriptions:
   - Attract XP Range +1
   - Attract XP Range +1

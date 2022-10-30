@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseAttackRange
   m_EditorClassIdentifier: 
   type: 106
-  name: Attack range++
+  skillName: Attack range++
   levelDescriptions:
   - Attack range +0.5
   - Attack range +0.5

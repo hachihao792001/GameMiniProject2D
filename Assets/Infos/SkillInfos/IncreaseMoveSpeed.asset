@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseMoveSpeed
   m_EditorClassIdentifier: 
   type: 103
-  name: Move speed++
+  skillName: Move speed++
   levelDescriptions:
   - Move speed +1
   - Move speed +1

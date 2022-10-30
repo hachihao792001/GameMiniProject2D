@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   type: 201
-  name: Sword
+  skillName: Rotating sword
   levelDescriptions:
   - Summon 2 swords that spin around you
   - Add another sword

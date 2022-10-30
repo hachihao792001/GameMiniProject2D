@@ -57,7 +57,7 @@ public struct SkillUpgradeAction
 public class SkillInfo : ScriptableObject
 {
     public SkillType type;
-    public string name;
+    public string skillName;
     public string[] levelDescriptions;
     public SkillUpgradeAction[] upgradeActions;
     public Sprite image;

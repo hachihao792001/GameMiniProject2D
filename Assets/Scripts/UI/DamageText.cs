@@ -12,9 +12,6 @@ public class DamageText : MonoBehaviour
 
     [SerializeField] Transform _followTarget;
     float currentUpOffset = 0;
-
-    float tick = 0;
-
     public void Init(float damage)
     {
         _followTarget = new GameObject().transform;
