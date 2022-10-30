@@ -9,6 +9,8 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     [SerializeField] float _joyStickHandleMaxDistance;
     private Vector3 _joyStickHandleOriginPos;
 
+    bool locking;
+
     public Vector2 Input => (_joyStickHandle.position - _joyStickHandleOriginPos) / _joyStickHandleMaxDistance;
 
     private void Start()
@@ -20,6 +22,7 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (locking) return;
         _joyStickHandle.position = eventData.position;
         ClampJoyStickHandle();
     }
@@ -39,6 +42,7 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (locking) return;
         _joyStickHandle.position = eventData.position;
         ClampJoyStickHandle();
     }
@@ -47,4 +51,7 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         _joyStickHandle.position = _joyStickHandleOriginPos;
     }
+
+    public void Lock() => locking = true;
+    public void Unlock() => locking = false;
 }

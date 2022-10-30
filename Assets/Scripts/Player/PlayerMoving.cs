@@ -35,4 +35,15 @@ public class PlayerMoving : MonoBehaviour
     {
         bonusSpeed += value;
     }
+
+    public bool IsMoving => _rb.velocity != Vector2.zero;
+    public void LockJoyStick()
+    {
+        _joyStick.OnPointerUp(null);
+        _joyStick.Lock();
+    }
+    public void UnlockJoyStick()
+    {
+        _joyStick.Unlock();
+    }
 }

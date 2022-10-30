@@ -510,7 +510,7 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 4427549917930392177, guid: 76ff4767816c27148bb98f85e0709a17, type: 3}
   _startShootingRange: 3
   _stopShootingRange: 4
-  _bulletDamage: 6
+  _bulletDamage: 10
 --- !u!114 &1250220424
 MonoBehaviour:
   m_ObjectHideFlags: 0
