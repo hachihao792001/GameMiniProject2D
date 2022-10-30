@@ -26,6 +26,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public PopupChooseSkillController PopupChooseSkillController;
 
     public GameObject RainEffect;
+    public GameObject DarkSky;
 
     public List<XPSprite> xpSprites;
 
@@ -42,5 +43,6 @@ public class GameController : OneSceneMonoSingleton<GameController>
     private void Start()
     {
         RainEffect.SetActive(currentStage == Stage.CloudyPark);
+        DarkSky.SetActive(currentStage == Stage.CloudyPark);
     }
 }
