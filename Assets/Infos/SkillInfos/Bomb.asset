@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bomb
   m_EditorClassIdentifier: 
   type: 2
-  name: Bomb
+  skillName: Bomb
   levelDescriptions:
   - Explosion deal area damage
   - Increase explosion size

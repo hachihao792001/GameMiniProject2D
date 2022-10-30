@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseDamage
   m_EditorClassIdentifier: 
   type: 101
-  name: Damage++
+  skillName: Damage++
   levelDescriptions:
   - Damage +1
   - Damage +1

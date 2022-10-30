@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseMaxHealth
   m_EditorClassIdentifier: 
   type: 102
-  name: Max health++
+  skillName: Max health++
   levelDescriptions:
   - Max health +10
   - Max health +10

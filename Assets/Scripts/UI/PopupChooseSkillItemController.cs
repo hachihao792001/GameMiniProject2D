@@ -22,7 +22,7 @@ public class PopupChooseSkillItemController : MonoBehaviour
 
         _imgIcon.sprite = skillInfo.image;
         _txtDescription.text = skillInfo.levelDescriptions[level - 1];
-        _txtName.text = skillInfo.name;
+        _txtName.text = skillInfo.skillName;
         _levelDisplayer.SetLevel(level);
     }
 

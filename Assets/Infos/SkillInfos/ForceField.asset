@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ForceField
   m_EditorClassIdentifier: 
   type: 202
-  name: Force Field
+  skillName: Force field
   levelDescriptions:
   - A force field damage surrounding enemies
   - Force field range +1

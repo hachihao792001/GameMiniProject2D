@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boomerang
   m_EditorClassIdentifier: 
   type: 1
-  name: Boomerang
+  skillName: Boomerang
   levelDescriptions:
   - Fly back after throwing
   - Throw another boomearang to the opposite direction
