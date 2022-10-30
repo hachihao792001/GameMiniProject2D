@@ -31,6 +31,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
+        if (!TutorialManager.IsTutorialShown)
+            return;
+
         tick += Time.deltaTime;
         if (tick >= currentDelay)
         {

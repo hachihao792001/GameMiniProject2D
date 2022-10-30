@@ -9,17 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d719d156839df894db91b98a23cf790f, type: 3}
-  m_Name: CloudyPark
+  m_Script: {fileID: 11500000, guid: fb764b9710088bb40aa1c274a7705292, type: 3}
+  m_Name: 6TrainingOver
   m_EditorClassIdentifier: 
-  Stage: 1
-  EnemySpawningInfos:
-  - enemyType: 1
-    rateWeight: 50
-    minLevel: 0
-  - enemyType: 2
-    rateWeight: 30
-    minLevel: 3
-  - enemyType: 3
-    rateWeight: 20
-    minLevel: 6
+  dialog: 6
+  dialogContent: "Good job! \nAh! A monster is approaching, I guess this training
+    is over, kill or be killed!"
