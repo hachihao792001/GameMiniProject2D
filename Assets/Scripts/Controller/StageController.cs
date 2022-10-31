@@ -31,9 +31,9 @@ public class StageController : MonoBehaviour
         {
             stageContainerPositions[i] = -i * (stageContainerLayout.spacing + stageButtonWidth);
         }
-        setTargetAnchoredPosition(new Vector2(stageContainerPositions[0], 0));
+        StageContainer.anchoredPosition = new Vector2(stageContainerPositions[0], 0);
 
-        isGoingToTarget = true;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(StageContainer);
     }
 
     public void scroll(bool isLeft)
@@ -46,7 +46,6 @@ public class StageController : MonoBehaviour
         buttons[0].interactable = index != 0;
         buttons[1].interactable = index != StageContainer.childCount - 1;
 
-        isGoingToTarget = true;
     }
 
     float tick = 0;
@@ -56,6 +55,7 @@ public class StageController : MonoBehaviour
         tick = 0;
         previousAnchoredPosition = StageContainer.anchoredPosition;
         targetAnchoredPosition = target;
+        isGoingToTarget = true;
     }
 
     void Update()
