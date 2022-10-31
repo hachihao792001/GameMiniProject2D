@@ -5,13 +5,36 @@ using UnityEngine.UI;
 
 public class StageController : MonoBehaviour
 {
+    public RectTransform Canvas;
+
     public RectTransform StageContainer;
     public Button[] StageButtonList;
     public Button[] buttons;
-    private float distance = 1071f;
+    [SerializeField] HorizontalLayoutGroup stageContainerLayout;
+
+    float[] stageContainerPositions;
+    float stageButtonWidth = 700.3167f;
     private int index = 0;
 
     Vector2 targetAnchoredPosition;
+
+    bool isGoingToTarget;
+
+    private void Start()
+    {
+        stageContainerLayout.spacing = Canvas.rect.width * 372.4f / 1080f;
+        stageContainerLayout.padding.left = stageContainerLayout.padding.right = Mathf.RoundToInt(Canvas.rect.width / 2 - stageButtonWidth / 2);
+
+        stageContainerPositions = new float[StageButtonList.Length];
+
+        for (int i = 0; i < stageContainerPositions.Length; i++)
+        {
+            stageContainerPositions[i] = -i * (stageContainerLayout.spacing + stageButtonWidth);
+        }
+        setTargetAnchoredPosition(new Vector2(stageContainerPositions[0], 0));
+
+        isGoingToTarget = true;
+    }
 
     public void scroll(bool isLeft)
     {
@@ -19,16 +42,36 @@ public class StageController : MonoBehaviour
         if (index < 0) index = 0;
         if (index >= StageContainer.childCount) index = StageContainer.childCount - 1;
 
-        targetAnchoredPosition = new Vector3(-distance * index, 0, 0);
+        setTargetAnchoredPosition(new Vector2(stageContainerPositions[index], 0));
         buttons[0].interactable = index != 0;
         buttons[1].interactable = index != StageContainer.childCount - 1;
+
+        isGoingToTarget = true;
+    }
+
+    float tick = 0;
+    Vector2 previousAnchoredPosition;
+    void setTargetAnchoredPosition(Vector2 target)
+    {
+        tick = 0;
+        previousAnchoredPosition = StageContainer.anchoredPosition;
+        targetAnchoredPosition = target;
     }
 
     void Update()
     {
-        if (Mathf.Abs(StageContainer.anchoredPosition.x - targetAnchoredPosition.x) > 0.1f)
+        if (isGoingToTarget)
         {
-            StageContainer.anchoredPosition = Vector3.Lerp(StageContainer.anchoredPosition, targetAnchoredPosition, Time.deltaTime * 10f);
+            tick += 3 * Time.deltaTime;
+            if (tick < 1)
+            {
+                StageContainer.anchoredPosition = Vector3.Lerp(previousAnchoredPosition, targetAnchoredPosition, tick);
+            }
+            else
+            {
+                StageContainer.anchoredPosition = targetAnchoredPosition;
+                isGoingToTarget = false;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
