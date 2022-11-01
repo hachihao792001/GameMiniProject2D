@@ -6,9 +6,6 @@ public class RangedEnemy : Enemy
 {
     readonly int ShootingHash = Animator.StringToHash("Shooting");
 
-    [SerializeField] Rigidbody2D _rb;
-    [SerializeField] SpriteRenderer _sr;
-
     [SerializeField] Animator _animator;
     [SerializeField] protected RangedEnemyBullet _bulletPrefab;
     [SerializeField] float _startShootingRange;

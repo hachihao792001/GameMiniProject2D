@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class MeleeEnemy : Enemy
 {
-    [SerializeField] Rigidbody2D _rb;
-    [SerializeField] SpriteRenderer _sr;
-
     [SerializeField] bool _dummy;
 
-    void Update()
+    protected virtual void Update()
     {
         if (_dummy) return;
         _rb.velocity = (player.transform.position - transform.position).normalized * _speed;

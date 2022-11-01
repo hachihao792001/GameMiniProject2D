@@ -7,7 +7,8 @@ public enum EnemyType
     None = 0,
     MeleeEnemy,
     RangedEnemy,
-    BigRangedEnemy
+    BigRangedEnemy,
+    PoisonEnemy
 }
 
 public class Enemy : MonoBehaviour
@@ -24,6 +25,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float _meleeDamage;
 
     [SerializeField] FlashingRed _flashingRed;
+
+    [SerializeField] protected Rigidbody2D _rb;
+    [SerializeField] protected SpriteRenderer _sr;
 
     public virtual void Start()
     {
@@ -44,7 +48,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void Die()
+    public virtual void Die()
     {
         XP newXP = Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
         newXP.Init(xp);
