@@ -12,9 +12,10 @@ public struct EnemySpawningInfo
 }
 
 [CreateAssetMenu(fileName = "StageSpawningInfo", menuName = "ScriptableObjects/StageSpawningInfo")]
-public class StageSpawningInfo : ScriptableObject
+public class StageInfo : ScriptableObject
 {
     public Stage Stage;
+    public string stageName;
     public List<EnemySpawningInfo> EnemySpawningInfos;
 
     public int CalculateSumWeight(List<EnemySpawningInfo> spawningInfos)

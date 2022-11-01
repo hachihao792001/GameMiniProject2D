@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CloudyPark
   m_EditorClassIdentifier: 
   Stage: 1
+  stageName: Cloudy Park
   EnemySpawningInfos:
   - enemyType: 1
     rateWeight: 50

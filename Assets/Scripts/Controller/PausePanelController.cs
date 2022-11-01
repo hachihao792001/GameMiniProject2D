@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PausePanelController : MonoBehaviour
 {
+    [SerializeField] TMP_Text _txtPlayInfo;
     public void Show()
     {
+        _txtPlayInfo.text = GameController.Instance.CurrentStageInfo.stageName;
+
         GameController.Instance.IsPause = true;
         gameObject.SetActive(true);
         Time.timeScale = 0;

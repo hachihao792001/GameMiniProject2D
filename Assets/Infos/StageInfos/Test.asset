@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d719d156839df894db91b98a23cf790f, type: 3}
-  m_Name: DeathCity
+  m_Name: Test
   m_EditorClassIdentifier: 
-  Stage: 0
+  Stage: 1
   EnemySpawningInfos:
-  - enemyType: 1
-    rateWeight: 60
+  - enemyType: 4
+    rateWeight: 100
     minLevel: 0
-  - enemyType: 2
-    rateWeight: 40
-    minLevel: 5

@@ -19,6 +19,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
 
     public LayerMask EnemyLayerMask;
     public LayerMask BallHitLayerMask;
+    public LayerMask PlayerLayerMask;
 
     public Camera MainCamera;
     public Transform Canvas;
@@ -82,4 +83,6 @@ public class GameController : OneSceneMonoSingleton<GameController>
             }
         }
     }
+
+    public StageInfo CurrentStageInfo => GameInformation.Instance.stageInfos.Find(x => x.Stage == currentStage);
 }

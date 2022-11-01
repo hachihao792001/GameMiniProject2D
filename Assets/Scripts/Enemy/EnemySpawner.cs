@@ -59,10 +59,10 @@ public class EnemySpawner : MonoBehaviour
     }
     public EnemyType GetRandomEnemy()
     {
-        StageSpawningInfo stageSpawningInfo = GameInformation.Instance.stageSpawningInfos[(int)GameController.Instance.currentStage];
-        List<EnemySpawningInfo> spawnableEnemies = stageSpawningInfo.GetSpawnableEnemies(GameController.Instance.Player.PlayerXP.currentLevel);
-        int sumWeight = stageSpawningInfo.CalculateSumWeight(spawnableEnemies);
-        int[] weightSumArray = stageSpawningInfo.CalculateWeightSumArray(spawnableEnemies);
+        StageInfo stageInfo = GameController.Instance.CurrentStageInfo;
+        List<EnemySpawningInfo> spawnableEnemies = stageInfo.GetSpawnableEnemies(GameController.Instance.Player.PlayerXP.currentLevel);
+        int sumWeight = stageInfo.CalculateSumWeight(spawnableEnemies);
+        int[] weightSumArray = stageInfo.CalculateWeightSumArray(spawnableEnemies);
 
         int random = Random.Range(1, sumWeight + 1);
         for (int i = 0; i < weightSumArray.Length; i++)
