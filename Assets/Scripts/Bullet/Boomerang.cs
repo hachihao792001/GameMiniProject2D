@@ -33,7 +33,11 @@ public class Boomerang : Bullet
                 doneStartDir = true;
             }
         }
-        else
+    }
+
+    private void FixedUpdate()
+    {
+        if (doneStartDir)
         {
             if (tick < secondDuration)
             {

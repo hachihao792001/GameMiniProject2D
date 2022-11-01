@@ -124,7 +124,7 @@ MonoBehaviour:
   secondDuration: 5
   doneStartDir: 0
   initialForce: 10
-  goBackForce: 6
+  goBackForce: 12
   rotateSpeed: 800
 --- !u!58 &5121623968690120966
 CircleCollider2D:
