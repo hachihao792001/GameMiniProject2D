@@ -15,3 +15,5 @@ MonoBehaviour:
   dialog: 4
   dialogContent: Learning how to move properly in our land is important, use the
     joystick to move.
+  alternativeDialogContent: Learning how to move properly in our land is important,
+    use WASD to move.

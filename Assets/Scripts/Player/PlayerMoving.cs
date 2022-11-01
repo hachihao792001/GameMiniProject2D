@@ -9,15 +9,18 @@ public class PlayerMoving : MonoBehaviour
     [SerializeField] Rigidbody2D _rb;
 
     public float bonusSpeed = 0;
+    bool isLockingMoving;
 
     private void Start()
     {
         bonusSpeed = 0;
+        _joyStick.gameObject.SetActive(GameInformation.IsPhone);
+        isLockingMoving = false;
     }
 
     private void Update()
     {
-#if UNITY_EDITOR
+        if (isLockingMoving) return;
         Vector2 pcInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         if (pcInput.magnitude > 1)
             pcInput.Normalize();
@@ -26,9 +29,6 @@ public class PlayerMoving : MonoBehaviour
             _rb.velocity = pcInput * (_speed + bonusSpeed);
         else
             _rb.velocity = _joyStick.Input * (_speed + bonusSpeed);
-#else
-            _rb.velocity = _joyStick.Input * (_speed + bonusSpeed);
-#endif
     }
 
     public void AddBonusSpeed(float value)
@@ -45,5 +45,22 @@ public class PlayerMoving : MonoBehaviour
     public void UnlockJoyStick()
     {
         _joyStick.Unlock();
+    }
+
+    public void LockMoving()
+    {
+        if (GameInformation.IsPhone)
+            LockJoyStick();
+
+        _rb.velocity = Vector2.zero;
+        isLockingMoving = true;
+    }
+
+    public void UnlockMoving()
+    {
+        if (GameInformation.IsPhone)
+            UnlockJoyStick();
+
+        isLockingMoving = false;
     }
 }

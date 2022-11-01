@@ -20,4 +20,6 @@ public class DialogInfo : ScriptableObject
     public Dialog dialog;
     [TextArea(20, 5)]
     public string dialogContent;
+    [TextArea(20, 5)]
+    public string alternativeDialogContent;
 }

@@ -54,25 +54,25 @@ public class TutorialManager : MonoSingleton<TutorialManager>
 
         yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "Game");
         GameController.Instance.PauseButton.gameObject.SetActive(false);
-        yield return PlayDialog(Dialog.Move);
+        yield return PlayDialog(Dialog.Move, !GameInformation.IsPhone);
         yield return new WaitUntil(() => GameController.Instance.Player.PlayerMoving.IsMoving);
         yield return new WaitForSeconds(2f);
-        GameController.Instance.Player.PlayerMoving.LockJoyStick();
+        GameController.Instance.Player.PlayerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.Approach);
-        GameController.Instance.Player.PlayerMoving.UnlockJoyStick();
+        GameController.Instance.Player.PlayerMoving.UnlockMoving();
         GameObject dummyEnemy = Instantiate(_dummyEnemyPrefab, GameController.Instance.Player.transform.position + Vector3.up * 4, Quaternion.identity);
         yield return new WaitUntil(() => dummyEnemy == null);
-        GameController.Instance.Player.PlayerMoving.LockJoyStick();
+        GameController.Instance.Player.PlayerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.TrainingOver);
-        GameController.Instance.Player.PlayerMoving.UnlockJoyStick();
+        GameController.Instance.Player.PlayerMoving.UnlockMoving();
         GameObject meleeEnemy = Instantiate(_meleeEnemyPrefab, GameController.Instance.Player.transform.position + Vector3.up * 3 + Vector3.left * 3, Quaternion.identity);
         yield return new WaitUntil(() => meleeEnemy == null);
-        GameController.Instance.Player.PlayerMoving.LockJoyStick();
+        GameController.Instance.Player.PlayerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.Ready);
-        GameController.Instance.Player.PlayerMoving.UnlockJoyStick();
+        GameController.Instance.Player.PlayerMoving.UnlockMoving();
 
         isPlayingTutorial = false;
         IsTutorialShown = true;
@@ -80,8 +80,8 @@ public class TutorialManager : MonoSingleton<TutorialManager>
         SceneManager.LoadScene("Game");
     }
 
-    IEnumerator PlayDialog(Dialog dialog)
+    IEnumerator PlayDialog(Dialog dialog, bool useAlternative = false)
     {
-        yield return _dialogController.Show(_dialogInfos.Find(x => x.dialog == dialog));
+        yield return _dialogController.Show(_dialogInfos.Find(x => x.dialog == dialog), useAlternative);
     }
 }

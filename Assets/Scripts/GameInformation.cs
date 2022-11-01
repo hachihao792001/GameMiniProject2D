@@ -46,4 +46,7 @@ public class GameInformation : MonoSingleton<GameInformation>
                 return HelperType.None;
         }
     }
+
+    public static bool IsPhone => Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer;
+
 }

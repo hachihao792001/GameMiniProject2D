@@ -32,7 +32,6 @@ public class PopupChooseSkillController : MonoBehaviour
         }
     }
 
-#if UNITY_EDITOR
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -48,8 +47,6 @@ public class PopupChooseSkillController : MonoBehaviour
             OnItemClicked(_items[2]);
         }
     }
-#endif
-
     void OnItemClicked(PopupChooseSkillItemController item)
     {
         playerSkill.UpgradeSkill(item.skillType);
