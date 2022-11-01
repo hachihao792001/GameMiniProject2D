@@ -6,7 +6,7 @@ public class GameInformation : MonoSingleton<GameInformation>
 {
     public List<BulletInfo> bulletInfos;
     public List<SkillInfo> skillInfos;
-    public List<StageSpawningInfo> stageSpawningInfos;
+    public List<StageInfo> stageInfos;
 
     public int[] levelXPs;
     public bool IsBulletSkill(SkillType skill)

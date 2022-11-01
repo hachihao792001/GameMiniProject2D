@@ -61,7 +61,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78cf60a06cec7e14ca0de0a93ed5b378, type: 2}
   - {fileID: 11400000, guid: 3a4cebbc14823a347a130380ee34d315, type: 2}
   - {fileID: 11400000, guid: 63acf9c83b6126c4e9c5e2c2bc8fd5f0, type: 2}
-  stageSpawningInfos:
+  stageInfos:
   - {fileID: 11400000, guid: 9277c5b3924b610489a2c071095b5d6c, type: 2}
   - {fileID: 11400000, guid: 6bd57c593b35d7e41b6e91b7f42c570b, type: 2}
   - {fileID: 11400000, guid: 2ddb0d3c1bc63a04e9374c04771c2b43, type: 2}

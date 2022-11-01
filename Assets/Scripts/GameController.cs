@@ -83,4 +83,6 @@ public class GameController : OneSceneMonoSingleton<GameController>
             }
         }
     }
+
+    public StageInfo CurrentStageInfo => GameInformation.Instance.stageInfos.Find(x => x.Stage == currentStage);
 }

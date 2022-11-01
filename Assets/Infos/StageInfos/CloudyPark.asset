@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d719d156839df894db91b98a23cf790f, type: 3}
-  m_Name: StampedeWorld
+  m_Name: CloudyPark
   m_EditorClassIdentifier: 
-  Stage: 2
+  Stage: 1
+  stageName: Cloudy Park
   EnemySpawningInfos:
   - enemyType: 1
-    rateWeight: 40
+    rateWeight: 50
     minLevel: 0
   - enemyType: 2
     rateWeight: 30
     minLevel: 3
   - enemyType: 3
     rateWeight: 20
-    minLevel: 5
-  - enemyType: 4
-    rateWeight: 10
-    minLevel: 8
+    minLevel: 6
