@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d719d156839df894db91b98a23cf790f, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  Stage: 1
+  Stage: 2
+  stageName: 
   EnemySpawningInfos:
   - enemyType: 4
     rateWeight: 100

@@ -28,9 +28,6 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public DamageTextController DamageTextController;
     public PopupChooseSkillController PopupChooseSkillController;
 
-    public GameObject RainEffect;
-    public GameObject DarkSky;
-
     public List<XPSprite> xpSprites;
 
     public Stage currentStage;
@@ -48,8 +45,6 @@ public class GameController : OneSceneMonoSingleton<GameController>
 
     private void Start()
     {
-        RainEffect.SetActive(currentStage == Stage.CloudyPark);
-        DarkSky.SetActive(currentStage == Stage.CloudyPark);
         float ratio = (float)Screen.width / Screen.height;
         if (ratio > 1.5f)
         {

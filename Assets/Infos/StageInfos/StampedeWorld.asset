@@ -16,7 +16,7 @@ MonoBehaviour:
   stageName: Stampede World
   EnemySpawningInfos:
   - enemyType: 1
-    rateWeight: 40
+    rateWeight: 30
     minLevel: 0
   - enemyType: 2
     rateWeight: 30
@@ -25,5 +25,5 @@ MonoBehaviour:
     rateWeight: 20
     minLevel: 5
   - enemyType: 4
-    rateWeight: 10
+    rateWeight: 20
     minLevel: 8
