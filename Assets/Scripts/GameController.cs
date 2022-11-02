@@ -71,7 +71,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!IsPause)
+            if (!IsPause && !Player.PlayerXP.WinPanel.activeSelf && !Player.PlayerHealth.LoosePanel.activeSelf)
             {
                 PauseButton.onClick.Invoke();
             }

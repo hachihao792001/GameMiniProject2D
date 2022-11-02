@@ -12881,6 +12881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563623650}
   - component: {fileID: 1563623651}
+  - component: {fileID: 1563623652}
   m_Layer: 7
   m_Name: BallWalls
   m_TagString: Untagged
@@ -12920,6 +12921,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 985233731}
   _offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1563623652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563623649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927fbfea7d014344db0325661dc02486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: {fileID: 869898107}
+  bottom: {fileID: 1690806529}
+  left: {fileID: 1520749830}
+  right: {fileID: 387187011}
 --- !u!1 &1582129160
 GameObject:
   m_ObjectHideFlags: 0
