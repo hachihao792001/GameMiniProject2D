@@ -81,17 +81,20 @@ public class StageController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (TutorialManager.IsTutorialShown)
         {
-            buttons[0].onClick.Invoke();
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            buttons[1].onClick.Invoke();
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-        {
-            StageButtonList[index].Click();
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                buttons[0].onClick.Invoke();
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                buttons[1].onClick.Invoke();
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            {
+                StageButtonList[index].Click();
+            }
         }
     }
 }

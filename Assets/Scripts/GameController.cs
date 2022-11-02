@@ -69,7 +69,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && TutorialManager.IsTutorialShown)
         {
             if (!IsPause && !Player.PlayerXP.WinPanel.activeSelf && !Player.PlayerHealth.LoosePanel.activeSelf)
             {

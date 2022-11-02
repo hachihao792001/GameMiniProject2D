@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 5Approach
   m_EditorClassIdentifier: 
   dialog: 5
-  dialogContent: Very well! Now we have prepared you a dummy target, try approaching
-    it to test our automatic shooting weapon!
+  dialogContent: Very well! Now we have prepared you a dummy target above you, try
+    approaching it to test our automatic shooting weapon!
+  alternativeDialogContent: 

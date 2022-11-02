@@ -179,7 +179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -17.019562, y: 0}
+  m_AnchoredPosition: {x: -17.019531, y: 0}
   m_SizeDelta: {x: 39, y: 154}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3024329175598958127
@@ -468,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.05758016}
   m_AnchorMax: {x: 0.96748555, y: 0.29519087}
-  m_AnchoredPosition: {x: 151.57056, y: -86.773926}
+  m_AnchoredPosition: {x: 151.57031, y: -86.773926}
   m_SizeDelta: {x: -303.1311, y: -26.426}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3024329176651013617
@@ -602,6 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtDialogContent: {fileID: 3024329175835408669}
+  button: {fileID: 4593291755002806787}
 --- !u!114 &4593291755002806787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,7 +860,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 5000, y: 5000}
+  m_SizeDelta: {x: 10000, y: 10000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3708247199269850982
 CanvasRenderer:

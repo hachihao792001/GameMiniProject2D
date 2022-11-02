@@ -2689,14 +2689,6 @@ PrefabInstance:
       propertyPath: _firstStageButton
       value: 
       objectReference: {fileID: 3888438996853903838}
-    - target: {fileID: 3024329175598958097, guid: 98fe3e28509caf145b28a42047736624, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -17.019531
-      objectReference: {fileID: 0}
-    - target: {fileID: 3024329176651013619, guid: 98fe3e28509caf145b28a42047736624, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 151.57031
-      objectReference: {fileID: 0}
     - target: {fileID: 4241552582254584166, guid: 98fe3e28509caf145b28a42047736624, type: 3}
       propertyPath: m_Pivot.x
       value: 0
