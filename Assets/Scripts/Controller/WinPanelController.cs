@@ -13,6 +13,9 @@ public class WinPanelController : MonoBehaviour
     {
         currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
         nextStageButton.interactable = currentStage != Stage.StampedeWorld;
+
+        if (currentStage != Stage.StampedeWorld)
+            DataManager.UnlockStage((Stage)((int)currentStage + 1));
     }
 
     public void HomeClick()

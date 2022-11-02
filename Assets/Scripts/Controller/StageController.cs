@@ -8,7 +8,7 @@ public class StageController : MonoBehaviour
     public RectTransform Canvas;
 
     public RectTransform StageContainer;
-    public Button[] StageButtonList;
+    public StageButtonController[] StageButtonList;
     public Button[] buttons;
     [SerializeField] HorizontalLayoutGroup stageContainerLayout;
 
@@ -34,6 +34,13 @@ public class StageController : MonoBehaviour
         StageContainer.anchoredPosition = new Vector2(stageContainerPositions[0], 0);
 
         LayoutRebuilder.ForceRebuildLayoutImmediate(StageContainer);
+    }
+    private void OnEnable()
+    {
+        for (int i = 0; i < StageButtonList.Length; i++)
+        {
+            StageButtonList[i].SetData(DataManager.IsStageUnlocked(StageButtonList[i].stage));
+        }
     }
 
     public void scroll(bool isLeft)
@@ -84,7 +91,7 @@ public class StageController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
-            StageButtonList[index].onClick.Invoke();
+            StageButtonList[index].Click();
         }
     }
 }
