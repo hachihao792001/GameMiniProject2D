@@ -41,6 +41,9 @@ public class GameController : OneSceneMonoSingleton<GameController>
     {
         base.Awake();
         currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
+
+        AudioController.Instance.StopAudio(Audio.HomeMusic);
+        AudioController.Instance.PlayAudio(Audio.GameMusic);
     }
 
     private void Start()

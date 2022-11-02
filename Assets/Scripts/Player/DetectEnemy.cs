@@ -22,6 +22,16 @@ public class DetectEnemy : MonoBehaviour
             nearestEnemy = null;
             return;
         }
+        for (int i = _enemiesInZone.Count - 1; i >= 0; i--)
+        {
+            if (_enemiesInZone[i] == null)
+                _enemiesInZone.RemoveAt(i);
+        }
+        if (_enemiesInZone.Count == 0)
+        {
+            nearestEnemy = null;
+            return;
+        }
 
         int nearestEnemyIndex = 0;
         for (int i = 1; i < _enemiesInZone.Count; i++)

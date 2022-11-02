@@ -11,6 +11,9 @@ public class HomeStage : MonoBehaviour
     {
         home.SetActive(true);
         stage.SetActive(false);
+
+        AudioController.Instance.StopAudio(Audio.GameMusic);
+        AudioController.Instance.PlayAudio(Audio.HomeMusic);
     }
 
     public void battle()
@@ -23,11 +26,5 @@ public class HomeStage : MonoBehaviour
     {
         home.SetActive(true);
         stage.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

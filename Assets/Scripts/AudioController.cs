@@ -14,7 +14,9 @@ public enum Audio
     PickUpXP,
     ButtonClick,
     RangedEnemyShoot,
-    EnemyHurt2
+    EnemyHurt2,
+    HomeMusic,
+    GameMusic
 }
 
 [Serializable]
@@ -23,6 +25,8 @@ public class AudioInfo
     public Audio audio;
     public AudioClip audioClip;
     public AudioSource audioSrc;
+    public bool looping;
+    public float volume = 1;
 }
 
 public class AudioController : MonoSingleton<AudioController>
@@ -36,12 +40,21 @@ public class AudioController : MonoSingleton<AudioController>
         {
             AudioInfos[i].audioSrc = gameObject.AddComponent<AudioSource>();
             AudioInfos[i].audioSrc.clip = AudioInfos[i].audioClip;
+            AudioInfos[i].audioSrc.loop = AudioInfos[i].looping;
+            AudioInfos[i].audioSrc.volume = AudioInfos[i].volume;
         }
     }
 
     public void PlayAudio(Audio audio)
     {
-        AudioInfos.Find(x => x.audio == audio).audioSrc.Play();
+        AudioSource audioSrc = AudioInfos.Find(x => x.audio == audio).audioSrc;
+        if (!audioSrc.isPlaying)
+            audioSrc.Play();
+    }
+
+    public void StopAudio(Audio audio)
+    {
+        AudioInfos.Find(x => x.audio == audio).audioSrc.Stop();
     }
 
     public void PlayRandomPlayerHurt()
