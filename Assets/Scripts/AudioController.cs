@@ -16,7 +16,8 @@ public enum Audio
     RangedEnemyShoot,
     EnemyHurt2,
     HomeMusic,
-    GameMusic
+    GameMusic,
+    BallHit
 }
 
 [Serializable]

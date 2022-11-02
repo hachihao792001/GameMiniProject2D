@@ -104,3 +104,8 @@ MonoBehaviour:
     audioSrc: {fileID: 0}
     looping: 1
     volume: 0.4
+  - audio: 12
+    audioClip: {fileID: 8300000, guid: db55466a3f7e47240b4faf9ab960c686, type: 3}
+    audioSrc: {fileID: 0}
+    looping: 0
+    volume: 1

@@ -21,6 +21,7 @@ public class Ball : Bullet
 
         if(Utils.LayerInLayerMask(collision.gameObject.layer, GameController.Instance.BallHitLayerMask)) 
         {
+            AudioController.Instance.PlayAudio(Audio.BallHit);
             rb.velocity = collision.contacts[0].normal * _speed;
         }
     }
