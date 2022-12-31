@@ -13060,6 +13060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4509cbdfe617af14bbaa01d67b06b2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 985233730}
   EnemyLayerMask:
     serializedVersion: 2
     m_Bits: 512

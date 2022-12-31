@@ -16,7 +16,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
     public const string PLAYER_TAG = "Player";
     public const string ENEMY_TAG = "Enemy";
     public const string XP_TAG = "XP";
-
+    public SpriteRenderer spriteRenderer;
     public LayerMask EnemyLayerMask;
     public LayerMask BallHitLayerMask;
     public LayerMask PlayerLayerMask;
@@ -57,6 +57,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
         {
             MainCamera.orthographicSize = 5f;
         }
+        spriteRenderer.sprite = GameInformation.Instance.skinInfos[PlayerPrefs.GetInt("EquippedSkinIndex")].skinSprite;
     }
 
     public void NextStage()
