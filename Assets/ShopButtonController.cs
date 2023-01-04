@@ -18,6 +18,8 @@ public enum Skin_index
 }
 
 
+
+
 public class ShopButtonController : MonoBehaviour
 {
     public Skin_index skin_idx;
@@ -28,11 +30,11 @@ public class ShopButtonController : MonoBehaviour
 
 
 
-    
-    
+
+
+
     
 
-   
     public void SetData(bool isUnlocked/*, bool isEquipped*/)
     {
         this.isUnlocked = isUnlocked;

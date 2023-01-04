@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,22 +13,34 @@ public class ShopController : MonoBehaviour
     public ShopButtonController[] ShopButtonList;
     public Button[] buttons;
     [SerializeField] HorizontalLayoutGroup shopContainerLayout;
-
+    [SerializeField] TextMeshProUGUI textMesh;
+    [SerializeField] TextMeshProUGUI goldOwned;
     [SerializeField] Button buyskin; 
     [SerializeField] Button equipskin; 
-    [SerializeField] Button equippedskin; 
+    [SerializeField] Button equippedskin;
     //[SerializeField] HorizontalLayoutGroup shopContainerLayout;
+    [SerializeField] GameObject buyConfirm;
+
+
+    [SerializeField] Button buySkinConfirm;
+    [SerializeField] Button cancelBuySkinConfirm;
+    [SerializeField] Button okBtn;
+
+    [SerializeField] GameObject sceneSuccess; 
+    [SerializeField] GameObject sceneFail; 
+
 
     float[] shopContainerPositions;
     float shopButtonWidth = 700.3167f;
     private int index = 0;
 
     Vector2 targetAnchoredPosition;
-
+    public int[] skinPrize = { 0, 9, 18, 27, 36, 54, 72, 108, 135 };
     bool isGoingToTarget;
 
     private void Start()
     {
+        textMesh.text = PlayerPrefs.GetInt("Money").ToString();
         shopContainerLayout.spacing = Canvas.rect.width * 372.4f / 1080f;
         shopContainerLayout.padding.left = shopContainerLayout.padding.right = Mathf.RoundToInt(Canvas.rect.width / 2 - shopButtonWidth / 2);
 
@@ -63,6 +76,9 @@ public class ShopController : MonoBehaviour
         if (!isUnlocked)
         {
             buyskin.gameObject.SetActive(true);
+// int gold = PlayerPrefs.GetInt("Money");
+
+            textMesh.text = skinPrize[index].ToString();
         }
         else if (index == PlayerPrefs.GetInt("EquippedSkinIndex"))
         {
@@ -94,13 +110,40 @@ public class ShopController : MonoBehaviour
         showInteractiveBtn((Skin_index)index);
 
     }
+    public void confirmBuySkin()
+    {
+        int gold = PlayerPrefs.GetInt("Money");
+        int skin_prize = skinPrize[index];
+        print(gold);
+        if (gold >= skin_prize)
+        {
+            print(1);
+            PlayerPrefs.SetInt("Money", gold - skin_prize);
+            sceneSuccess.SetActive(true);
+            sceneFail.SetActive(false);
+        }
+        else
+        {
+            print(0);
+            sceneSuccess.SetActive(false);
+            sceneFail.SetActive(true);
+        }
+    }
 
-    public void buySkin()
+    public void confirmSuccessful()
     {
         DataManager.UnlockSkin((Skin_index)index);
         turnOffInteractiveBtn();
         equipskin.gameObject.SetActive(true);
+        sceneSuccess.SetActive(false);
+        sceneFail.SetActive(false);
     }
+
+    /*public void buySkin()
+    {
+   
+        
+    }*/
 
     public void equipSkin()
     {
