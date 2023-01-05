@@ -40,7 +40,8 @@ public class ShopController : MonoBehaviour
 
     private void Start()
     {
-        textMesh.text = PlayerPrefs.GetInt("Money").ToString();
+
+        goldOwned.text = PlayerPrefs.GetInt("Money").ToString();
         shopContainerLayout.spacing = Canvas.rect.width * 372.4f / 1080f;
         shopContainerLayout.padding.left = shopContainerLayout.padding.right = Mathf.RoundToInt(Canvas.rect.width / 2 - shopButtonWidth / 2);
 
@@ -55,8 +56,8 @@ public class ShopController : MonoBehaviour
         //index = last;
         //ShopButtonList[last].showInteractiveBtn();
         LayoutRebuilder.ForceRebuildLayoutImmediate(ShopContainer);
-
-        showInteractiveBtn((Skin_index)last);
+        print(PlayerPrefs.GetInt("Money"));
+        showInteractiveBtn(0);
     }
 
     public void turnOffInteractiveBtn()
@@ -119,6 +120,7 @@ public class ShopController : MonoBehaviour
         {
             print(1);
             PlayerPrefs.SetInt("Money", gold - skin_prize);
+            goldOwned.text = PlayerPrefs.GetInt("Money").ToString();
             sceneSuccess.SetActive(true);
             sceneFail.SetActive(false);
         }

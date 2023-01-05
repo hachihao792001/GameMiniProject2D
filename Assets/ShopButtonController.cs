@@ -24,7 +24,7 @@ public class ShopButtonController : MonoBehaviour
 {
     public Skin_index skin_idx;
     //[SerializeField] bool isEquipped;
-    [SerializeField] GameObject lockIcon;
+    //[SerializeField] GameObject lockIcon;
     [SerializeField] bool isUnlocked;
     [SerializeField] Button button;
 
@@ -38,7 +38,7 @@ public class ShopButtonController : MonoBehaviour
     public void SetData(bool isUnlocked/*, bool isEquipped*/)
     {
         this.isUnlocked = isUnlocked;
-        lockIcon.SetActive(!isUnlocked);
+        //lockIcon.SetActive(!isUnlocked);
 
         //this.isEquipped = isEquipped;
         //lockIcon.SetActive(!isUnlocked);
