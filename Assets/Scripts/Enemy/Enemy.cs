@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public enum EnemyType
 {
@@ -13,6 +14,7 @@ public enum EnemyType
 
 public class Enemy : MonoBehaviour
 {
+    
     public EnemyType enemyType;
     protected Player player;
 
@@ -20,7 +22,7 @@ public class Enemy : MonoBehaviour
     public float CurrentHealth;
 
     public int xp;
-
+    public Random r;
     [SerializeField] protected float _speed;
     [SerializeField] protected float _meleeDamage;
 
@@ -50,7 +52,11 @@ public class Enemy : MonoBehaviour
 
     public virtual void Die()
     {
+        Random rnd = new Random();
         XP newXP = Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
+        int goldEarned = rnd.Next(10, 50);
+        int currentGold = PlayerPrefs.GetInt("Money");
+        PlayerPrefs.SetInt("Money", currentGold + goldEarned);
         newXP.Init(xp);
         Destroy(gameObject);
     }
