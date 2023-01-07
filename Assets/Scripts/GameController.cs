@@ -40,7 +40,7 @@ public class GameController : OneSceneMonoSingleton<GameController>
     protected override void Awake()
     {
         base.Awake();
-        currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
+        currentStage = DataManager.CurrentStage;
 
         AudioController.Instance.StopAudio(Audio.HomeMusic);
         AudioController.Instance.PlayAudio(Audio.GameMusic);
@@ -57,20 +57,19 @@ public class GameController : OneSceneMonoSingleton<GameController>
         {
             MainCamera.orthographicSize = 5f;
         }
-        spriteRenderer.sprite = GameInformation.Instance.skinInfos[PlayerPrefs.GetInt("EquippedSkinIndex")].skinSprite;
+        spriteRenderer.sprite = GameInformation.Instance.skinInfos[DataManager.EquippedSkinIndex].skinSprite;
     }
 
     public void NextStage()
     {
         currentStage++;
-        PlayerPrefs.SetInt("stage", (int)currentStage);
-        PlayerPrefs.Save();
+        DataManager.CurrentStage = currentStage;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && TutorialManager.IsTutorialShown)
+        if (Input.GetKeyDown(KeyCode.Escape) && DataManager.IsTutorialShown)
         {
             if (!IsPause && !Player.PlayerXP.WinPanel.activeSelf && !Player.PlayerHealth.LoosePanel.activeSelf)
             {

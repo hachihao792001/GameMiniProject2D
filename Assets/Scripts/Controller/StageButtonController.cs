@@ -29,7 +29,7 @@ public class StageButtonController : MonoBehaviour
     {
         if (isUnlocked)
         {
-            PlayerPrefs.SetInt("stage", (int)stage);
+            DataManager.CurrentStage = stage;
             SceneManager.LoadScene("Game");
         }
     }

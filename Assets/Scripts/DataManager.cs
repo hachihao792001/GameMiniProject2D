@@ -4,11 +4,33 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
+    private const string IsTutorialShownDataKey = "IsTutorialShown";
+    private const string StageUnlockedDataKey = "StageUnlocked";
+    private const string CurrentStageDataKey = "CurrentStage";
+    private const string SkinUnlockedDataKey = "SkinUnlocked";
+    private const string MoneyDataKey = "Money";
+    private const string EquippedSkinIndexDataKey = "EquippedSkinIndex";
+
+    #region Tutorial
+    public static bool IsTutorialShown
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(IsTutorialShownDataKey, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt("IsTutorialShown", value ? 1 : 0);
+        }
+    }
+    #endregion
+
+    #region Stage
     public static List<bool> StageUnlocked
     {
         get
         {
-            string data = PlayerPrefs.GetString("StageUnlocked", "1;0;0");
+            string data = PlayerPrefs.GetString(StageUnlockedDataKey, "1;0;0");
             List<bool> result = new List<string>(data.Split(';')).ConvertAll(x => x == "1" ? true : false);
             return result;
         }
@@ -23,7 +45,7 @@ public class DataManager : MonoBehaviour
                 if (i < newData.Count - 1)
                     dataToSave += ";";
             }
-            PlayerPrefs.SetString("StageUnlocked", dataToSave);
+            PlayerPrefs.SetString(StageUnlockedDataKey, dataToSave);
         }
     }
 
@@ -39,14 +61,26 @@ public class DataManager : MonoBehaviour
         return StageUnlocked[(int)stage];
     }
 
+    public static Stage CurrentStage
+    {
+        get
+        {
+            return (Stage)PlayerPrefs.GetInt(CurrentStageDataKey, (int)Stage.DeathCity);
+        }
 
+        set
+        {
+            PlayerPrefs.SetInt(CurrentStageDataKey, (int)value);
+        }
+    }
+    #endregion
 
-
+    #region Skin
     public static List<bool> SkinUnlocked
     {
         get
         {
-            string data = PlayerPrefs.GetString("SkinUnlocked", "1;0;0;0;0;0;0;0;0");
+            string data = PlayerPrefs.GetString(SkinUnlockedDataKey, "1;0;0;0;0;0;0;0;0");
             List<bool> result = new List<string>(data.Split(';')).ConvertAll(x => x == "1" ? true : false);
             return result;
         }
@@ -61,7 +95,7 @@ public class DataManager : MonoBehaviour
                 if (i < newData.Count - 1)
                     skinToSave += ";";
             }
-            PlayerPrefs.SetString("SkinUnlocked", skinToSave);
+            PlayerPrefs.SetString(SkinUnlockedDataKey, skinToSave);
         }
     }
 
@@ -76,4 +110,33 @@ public class DataManager : MonoBehaviour
     {
         return SkinUnlocked[(int)skin_idx];
     }
+
+    public static int EquippedSkinIndex
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(EquippedSkinIndexDataKey, 0);
+        }
+
+        set
+        {
+            PlayerPrefs.SetInt(EquippedSkinIndexDataKey, value);
+        }
+    }
+    #endregion
+
+    #region Money
+    public static int Money
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(MoneyDataKey, 1000);
+        }
+
+        set
+        {
+            PlayerPrefs.SetInt(MoneyDataKey, value);
+        }
+    }
+    #endregion
 }

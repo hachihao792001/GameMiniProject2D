@@ -11,7 +11,7 @@ public class WinPanelController : MonoBehaviour
 
     private void OnEnable()
     {
-        currentStage = (Stage)PlayerPrefs.GetInt("stage", (int)Stage.DeathCity);
+        currentStage = DataManager.CurrentStage;
         nextStageButton.interactable = currentStage != Stage.StampedeWorld;
 
         if (currentStage != Stage.StampedeWorld)

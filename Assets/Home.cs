@@ -9,7 +9,7 @@ public class Home : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gold.text = PlayerPrefs.GetInt("Money").ToString();
+        gold.text = DataManager.Money.ToString();
     }
 
     // Update is called once per frame

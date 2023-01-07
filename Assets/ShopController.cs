@@ -15,8 +15,8 @@ public class ShopController : MonoBehaviour
     [SerializeField] HorizontalLayoutGroup shopContainerLayout;
     [SerializeField] TextMeshProUGUI textMesh;
     [SerializeField] TextMeshProUGUI goldOwned;
-    [SerializeField] Button buyskin; 
-    [SerializeField] Button equipskin; 
+    [SerializeField] Button buyskin;
+    [SerializeField] Button equipskin;
     [SerializeField] Button equippedskin;
     //[SerializeField] HorizontalLayoutGroup shopContainerLayout;
     [SerializeField] GameObject buyConfirm;
@@ -26,8 +26,8 @@ public class ShopController : MonoBehaviour
     [SerializeField] Button cancelBuySkinConfirm;
     [SerializeField] Button okBtn;
 
-    [SerializeField] GameObject sceneSuccess; 
-    [SerializeField] GameObject sceneFail; 
+    [SerializeField] GameObject sceneSuccess;
+    [SerializeField] GameObject sceneFail;
 
 
     float[] shopContainerPositions;
@@ -41,7 +41,7 @@ public class ShopController : MonoBehaviour
     private void Start()
     {
 
-        goldOwned.text = PlayerPrefs.GetInt("Money").ToString();
+        goldOwned.text = DataManager.Money.ToString();
         shopContainerLayout.spacing = Canvas.rect.width * 372.4f / 1080f;
         shopContainerLayout.padding.left = shopContainerLayout.padding.right = Mathf.RoundToInt(Canvas.rect.width / 2 - shopButtonWidth / 2);
 
@@ -52,22 +52,22 @@ public class ShopController : MonoBehaviour
             shopContainerPositions[i] = -i * (shopContainerLayout.spacing + shopButtonWidth);
         }
         ShopContainer.anchoredPosition = new Vector2(shopContainerPositions[0], 0);
-        int last = PlayerPrefs.GetInt("EquippedSkinIndex", 0);
+        int last = DataManager.EquippedSkinIndex;
         //index = last;
         //ShopButtonList[last].showInteractiveBtn();
         LayoutRebuilder.ForceRebuildLayoutImmediate(ShopContainer);
-        print(PlayerPrefs.GetInt("Money"));
+        print(DataManager.Money);
         showInteractiveBtn(0);
     }
 
     public void turnOffInteractiveBtn()
     {
         //if (buyskin.gameObject.activeSelf)
-            buyskin.gameObject.SetActive(false);
+        buyskin.gameObject.SetActive(false);
         //if (equipskin.gameObject.activeSelf) 
-            equipskin.gameObject.SetActive(false);
+        equipskin.gameObject.SetActive(false);
         //if (equippedskin.gameObject.activeSelf) 
-            equippedskin.gameObject.SetActive(false);
+        equippedskin.gameObject.SetActive(false);
     }
 
     public void showInteractiveBtn(Skin_index i)
@@ -77,15 +77,15 @@ public class ShopController : MonoBehaviour
         if (!isUnlocked)
         {
             buyskin.gameObject.SetActive(true);
-// int gold = PlayerPrefs.GetInt("Money");
+            // int gold = PlayerPrefs.GetInt("Money");
 
             textMesh.text = skinPrize[index].ToString();
         }
-        else if (index == PlayerPrefs.GetInt("EquippedSkinIndex"))
+        else if (index == DataManager.EquippedSkinIndex)
         {
             equippedskin.gameObject.SetActive(true);
         }
-        else 
+        else
             equipskin.gameObject.SetActive(true);
     }
     private void OnEnable()
@@ -113,14 +113,14 @@ public class ShopController : MonoBehaviour
     }
     public void confirmBuySkin()
     {
-        int gold = PlayerPrefs.GetInt("Money");
+        int gold = DataManager.Money;
         int skin_prize = skinPrize[index];
         print(gold);
         if (gold >= skin_prize)
         {
             print(1);
-            PlayerPrefs.SetInt("Money", gold - skin_prize);
-            goldOwned.text = PlayerPrefs.GetInt("Money").ToString();
+            DataManager.Money = gold - skin_prize;
+            goldOwned.text = DataManager.Money.ToString();
             sceneSuccess.SetActive(true);
             sceneFail.SetActive(false);
         }
@@ -149,12 +149,12 @@ public class ShopController : MonoBehaviour
 
     public void equipSkin()
     {
-        PlayerPrefs.SetInt("EquippedSkinIndex", index);
+        DataManager.EquippedSkinIndex = index;
         turnOffInteractiveBtn();
         equippedskin.gameObject.SetActive(true);
         //System.Console.WriteLine(PlayerPrefs.GetInt("EquippedSkinIndex").ToString());
 
-        Debug.Log("WeaponNum = " + PlayerPrefs.GetInt("EquippedSkinIndex").ToString());
+        Debug.Log("WeaponNum = " + DataManager.EquippedSkinIndex.ToString());
     }
 
 
@@ -184,7 +184,7 @@ public class ShopController : MonoBehaviour
             }
         }
 
-        if (TutorialManager.IsTutorialShown)
+        if (DataManager.IsTutorialShown)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {

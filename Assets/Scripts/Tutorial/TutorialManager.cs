@@ -6,18 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoSingleton<TutorialManager>
 {
-    public static bool IsTutorialShown
-    {
-        get
-        {
-            return PlayerPrefs.GetInt("IsTutorialShown", 0) == 1;
-        }
-        set
-        {
-            PlayerPrefs.SetInt("IsTutorialShown", value ? 1 : 0);
-        }
-    }
-
     [SerializeField] List<DialogInfo> _dialogInfos;
 
     public bool isPlayingTutorial;
@@ -32,7 +20,7 @@ public class TutorialManager : MonoSingleton<TutorialManager>
 
     void Start()
     {
-        if (!IsTutorialShown)
+        if (!DataManager.IsTutorialShown)
         {
             StartCoroutine(tutorialCoroutine());
         }
@@ -75,7 +63,7 @@ public class TutorialManager : MonoSingleton<TutorialManager>
         GameController.Instance.Player.PlayerMoving.UnlockMoving();
 
         isPlayingTutorial = false;
-        IsTutorialShown = true;
+        DataManager.IsTutorialShown = true;
 
         SceneManager.LoadScene("Game");
     }

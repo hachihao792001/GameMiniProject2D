@@ -14,7 +14,7 @@ public enum EnemyType
 
 public class Enemy : MonoBehaviour
 {
-    
+
     public EnemyType enemyType;
     protected Player player;
 
@@ -55,8 +55,8 @@ public class Enemy : MonoBehaviour
         Random rnd = new Random();
         XP newXP = Instantiate(GameController.Instance.XPPrefab, transform.position, Quaternion.identity);
         int goldEarned = rnd.Next(10, 50);
-        int currentGold = PlayerPrefs.GetInt("Money");
-        PlayerPrefs.SetInt("Money", currentGold + goldEarned);
+        int currentGold = DataManager.Money;
+        DataManager.Money = currentGold + goldEarned;
         newXP.Init(xp);
         Destroy(gameObject);
     }

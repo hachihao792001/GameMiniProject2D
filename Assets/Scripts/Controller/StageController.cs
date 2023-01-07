@@ -81,7 +81,7 @@ public class StageController : MonoBehaviour
             }
         }
 
-        if (TutorialManager.IsTutorialShown)
+        if (DataManager.IsTutorialShown)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
