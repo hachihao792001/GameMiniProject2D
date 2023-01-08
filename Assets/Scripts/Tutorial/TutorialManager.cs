@@ -40,27 +40,29 @@ public class TutorialManager : MonoSingleton<TutorialManager>
         yield return _tutorialHighlight.Show(_firstStageButton.transform);
         _firstStageButton.onClick.Invoke();
 
+        PlayerMoving playerMoving = GameController.Instance.Player.PlayerMoving;
+
         yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "Game");
         GameController.Instance.PauseButton.gameObject.SetActive(false);
         yield return PlayDialog(Dialog.Move, !GameInformation.IsPhone);
-        yield return new WaitUntil(() => GameController.Instance.Player.PlayerMoving.IsMoving);
+        yield return new WaitUntil(() => playerMoving.IsMoving);
         yield return new WaitForSeconds(2f);
-        GameController.Instance.Player.PlayerMoving.LockMoving();
+        playerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.Approach);
-        GameController.Instance.Player.PlayerMoving.UnlockMoving();
+        playerMoving.UnlockMoving();
         GameObject dummyEnemy = Instantiate(_dummyEnemyPrefab, GameController.Instance.Player.transform.position + Vector3.up * 4, Quaternion.identity);
         yield return new WaitUntil(() => dummyEnemy == null);
-        GameController.Instance.Player.PlayerMoving.LockMoving();
+        playerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.TrainingOver);
-        GameController.Instance.Player.PlayerMoving.UnlockMoving();
+        playerMoving.UnlockMoving();
         GameObject meleeEnemy = Instantiate(_meleeEnemyPrefab, GameController.Instance.Player.transform.position + Vector3.up * 3 + Vector3.left * 3, Quaternion.identity);
         yield return new WaitUntil(() => meleeEnemy == null);
-        GameController.Instance.Player.PlayerMoving.LockMoving();
+        playerMoving.LockMoving();
 
         yield return PlayDialog(Dialog.Ready);
-        GameController.Instance.Player.PlayerMoving.UnlockMoving();
+        playerMoving.UnlockMoving();
 
         isPlayingTutorial = false;
         DataManager.IsTutorialShown = true;
