@@ -31,9 +31,9 @@ public class PlayerSkill : MonoBehaviour
         SkillUpgradeAction upgradeAction = skillInfo.upgradeActions[newLevel - 1];
         float upgradeActionValue = upgradeAction.value;
 
-        if (GameInformation.Instance.IsBulletSkill(skillType))
+        if (SkillInfo.IsBulletSkill(skillType))
         {
-            BulletType bulletType = GameInformation.Instance.SkillTypeToBullet(skillType);
+            BulletType bulletType = SkillInfo.SkillTypeToBullet(skillType);
             if (!player.PlayerAttacking.IsBulletUnlocked(bulletType))
             {
                 player.PlayerAttacking.UnlockBullet(bulletType);
@@ -52,9 +52,9 @@ public class PlayerSkill : MonoBehaviour
                     break;
             }
         }
-        else if (GameInformation.Instance.IsHelperSkill(skillType))
+        else if (SkillInfo.IsHelperSkill(skillType))
         {
-            HelperType helperType = GameInformation.Instance.SkillTypeToHelper(skillType);
+            HelperType helperType = SkillInfo.SkillTypeToHelper(skillType);
             player.PlayerHelper.UnlockHelper(helperType);
 
             switch (upgradeAction.type)

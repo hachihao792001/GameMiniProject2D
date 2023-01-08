@@ -19,7 +19,7 @@ public enum SkillType
 
     Sword = 201,
     ForceField = 202,
-    
+
     Heal = 301
 }
 
@@ -61,4 +61,53 @@ public class SkillInfo : ScriptableObject
     public string[] levelDescriptions;
     public SkillUpgradeAction[] upgradeActions;
     public Sprite image;
+
+
+    public const int FirstBulletSkill = 1;
+    public const int LastBulletSkill = 100;
+    public const int FirstAttributeSkill = 101;
+    public const int LastAttributeSkill = 200;
+    public const int FirstHelperSkill = 201;
+    public const int LastHelperSkill = 300;
+    public const int FirstInstantSkill = 301;
+
+    public static bool IsBulletSkill(SkillType skill)
+    {
+        int skillInt = (int)skill;
+        return skillInt >= FirstBulletSkill && skillInt <= LastBulletSkill;
+    }
+
+    public static BulletType SkillTypeToBullet(SkillType skill)
+    {
+        switch (skill)
+        {
+            case SkillType.Boomerang:
+                return BulletType.Boomerang;
+            case SkillType.Bomb:
+                return BulletType.Bomb;
+            case SkillType.Ball:
+                return BulletType.Ball;
+            default:
+                return BulletType.None;
+        }
+    }
+
+    public static bool IsHelperSkill(SkillType skill)
+    {
+        int skillInt = (int)skill;
+        return skillInt >= FirstHelperSkill && skillInt <= LastHelperSkill;
+    }
+
+    public static HelperType SkillTypeToHelper(SkillType skill)
+    {
+        switch (skill)
+        {
+            case SkillType.Sword:
+                return HelperType.Sword;
+            case SkillType.ForceField:
+                return HelperType.ForceField;
+            default:
+                return HelperType.None;
+        }
+    }
 }
